@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7343D26B-0B03-4AFD-A4A4-2137982F4417}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QC.Forms</RootNamespace>
+    <AssemblyName>QC.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.13.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\QC.Engineering\packages\DocumentFormat.OpenXml.2.13.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseEntryForm.designer.cs">
+      <DependentUpon>BaseEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseGridForm.Designer.cs">
+      <DependentUpon>BaseGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseGridForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseGridForm2.Designer.cs" />
+    <Compile Include="BaseRadFormBlank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseRadFormBlank.Designer.cs">
+      <DependentUpon>BaseRadFormBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Entry\CommProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\CommProject.designer.cs">
+      <DependentUpon>CommProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\DEDFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\DEDFolders.Designer.cs">
+      <DependentUpon>DEDFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\DesignEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\DesignEstimate.Designer.cs">
+      <DependentUpon>DesignEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\DesignTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\DesignTOR.Designer.cs">
+      <DependentUpon>DesignTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\Inspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\Inspection.Designer.cs">
+      <DependentUpon>Inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\NewProject.Designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\DesignPlanDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\DesignPlanDetails.Designer.cs">
+      <DependentUpon>DesignPlanDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtils.cs" />
+    <Compile Include="List\Communication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\Communication.Designer.cs">
+      <DependentUpon>Communication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\Design.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\Design.Designer.cs">
+      <DependentUpon>Design.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\Folders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\Folders.Designer.cs">
+      <DependentUpon>Folders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\Inspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\Inspection.Designer.cs">
+      <DependentUpon>Inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\MyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\MyList.Designer.cs">
+      <DependentUpon>MyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ProjectBom2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\ProjectBom2.designer.cs">
+      <DependentUpon>ProjectBom2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\SelectItemCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\SelectItemCode.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddNewProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddNewProject.Designer.cs">
+      <DependentUpon>AddNewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AutoCadFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AutoCadFiles.Designer.cs">
+      <DependentUpon>AutoCadFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BOM.Designer.cs">
+      <DependentUpon>BOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EquipmentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EquipmentList.Designer.cs">
+      <DependentUpon>EquipmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Estimates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Estimates.Designer.cs">
+      <DependentUpon>Estimates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Inspection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Inspection.Designer.cs">
+      <DependentUpon>Inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PersonnelList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PersonnelList.Designer.cs">
+      <DependentUpon>PersonnelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProjectCertificationcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProjectCertificationcs.Designer.cs">
+      <DependentUpon>ProjectCertificationcs.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseEntryForm.resx">
+      <DependentUpon>BaseEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseGridForm.resx">
+      <DependentUpon>BaseGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseGridForm2.resx" />
+    <EmbeddedResource Include="BaseRadFormBlank.resx">
+      <DependentUpon>BaseRadFormBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\CommProject.resx">
+      <DependentUpon>CommProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\DEDFolders.resx">
+      <DependentUpon>DEDFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\DesignEstimate.resx">
+      <DependentUpon>DesignEstimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\DesignTOR.resx">
+      <DependentUpon>DesignTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\Inspection.resx">
+      <DependentUpon>Inspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\NewProject.resx">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\DesignPlanDetails.resx">
+      <DependentUpon>DesignPlanDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\Communication.resx">
+      <DependentUpon>Communication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\ProjectBom.resx" />
+    <EmbeddedResource Include="List\ProjectBom2.resx">
+      <DependentUpon>ProjectBom2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\SelectItemCode.resx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AddNewProject.resx">
+      <DependentUpon>AddNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BOM.resx">
+      <DependentUpon>BOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EquipmentList.resx">
+      <DependentUpon>EquipmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Inspection.resx">
+      <DependentUpon>Inspection.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QC.Lib\QC.Lib.csproj">
+      <Project>{0270f352-ed64-42e7-9efe-f2318116952a}</Project>
+      <Name>QC.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QC.Repository\QC.Repository.csproj">
+      <Project>{b9cc90d3-8739-4223-8886-bfddb9ccf505}</Project>
+      <Name>QC.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
