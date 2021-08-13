@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Engineering", "QC.Engineering\QC.Engineering.csproj", "{19B1BB06-82BD-49E4-909D-2FE9A3C58BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Lib", "QC.Lib\QC.Lib.csproj", "{0270F352-ED64-42E7-9EFE-F2318116952A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Forms", "QC.Forms\QC.Forms.csproj", "{7343D26B-0B03-4AFD-A4A4-2137982F4417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Repository", "QC.Repository\QC.Repository.csproj", "{B9CC90D3-8739-4223-8886-BFDDB9CCF505}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19B1BB06-82BD-49E4-909D-2FE9A3C58BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B1BB06-82BD-49E4-909D-2FE9A3C58BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B1BB06-82BD-49E4-909D-2FE9A3C58BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B1BB06-82BD-49E4-909D-2FE9A3C58BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0270F352-ED64-42E7-9EFE-F2318116952A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0270F352-ED64-42E7-9EFE-F2318116952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0270F352-ED64-42E7-9EFE-F2318116952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0270F352-ED64-42E7-9EFE-F2318116952A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7343D26B-0B03-4AFD-A4A4-2137982F4417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7343D26B-0B03-4AFD-A4A4-2137982F4417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7343D26B-0B03-4AFD-A4A4-2137982F4417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7343D26B-0B03-4AFD-A4A4-2137982F4417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Security.Cryptography.5.0.505.0\lib\NET35
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+		SolutionGuid = {1EC96667-1163-4136-9FE6-1D9638F965E1}
+	EndGlobalSection
+EndGlobal
