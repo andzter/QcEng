@@ -1,0 +1,20 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+/Src/packages
+/Src/QC.Engineering/.vs
+/Src/QC.Engineering/bin
+/Src/QC.Engineering/obj
+/Src/QC.Engineering/Properties
+/Src/QC.Forms/.vs
+/Src/QC.Forms/bin
+/Src/QC.Forms/obj
+/Src/QC.Forms/Properties
+/Src/QC.Lib/.vs
+/Src/QC.Lib/bin
+/Src/QC.Lib/obj
+/Src/QC.Lib/Properties
+/Src/QC.Repository/.vs
+/Src/QC.Repository/bin
+/Src/QC.Repository/obj
+/Src/QC.Repository/Properties
