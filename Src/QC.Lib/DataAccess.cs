@@ -198,7 +198,6 @@ namespace QC.Lib
             return dr;
         }
 
-
         public DataTable GetDataTable(string query)
         {
             return GetDataSet(query).Tables[0];

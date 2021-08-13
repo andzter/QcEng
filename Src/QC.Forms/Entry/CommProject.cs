@@ -25,19 +25,24 @@ namespace QC.Forms.Entry
             InitializeComponent();
 
             //MessageBox.Show(id);
-            var data = new Repository.Project().GetProjectbyId(id);
+            var data = new Repository.Communications().GetbyId(id);
             txtrefno.Text = data["referenceNo"].ToString();
             txtproject.Text = data["project"].ToString();
             txtdocsource.Text = data["docsource"].ToString();
             txtRem.Text = data["remarks"].ToString();
 
-            var dtusers = new Repository.Lookup().GetUsers();
+            //var dtusers = new Repository.Lookup().GetUsers();
 
-            QC.Lib.Common.FillControl(cboRoute, dtusers);
+            var dtteams = new Repository.Lookup().GetTeams();
+
+            QC.Lib.Common.FillControl(cboRoute, dtteams);
 
             radGrid.AllowAddNewRow = false;
             radGrid.AllowEditRow = false;
-            radGrid.DataSource = new Repository.Project().GetProjectHistory(id);
+            radGrid.DataSource = new Repository.Communications().GetHistory(id, _userid);
+
+            var uproj = new UserControls.CommProjects() { CommunicationId = id, Dock = DockStyle.Fill};
+            tabProject.Controls.Add(uproj);
 
             _id = id;
 
@@ -45,7 +50,7 @@ namespace QC.Forms.Entry
 
         protected override void SaveEntry()
         { 
-            new Repository.Project().SaveNewProject(_id, txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text, Lib.Common.ComboVal(cboRoute),   _userid);
+            new Repository.Communications().Save(_id, txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text, Lib.Common.ComboVal(cboRoute),   _userid);
         }
     }
 }

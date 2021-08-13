@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QC.Forms.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,22 @@ namespace QC.Forms.Entry
             var dtusers = new Repository.Lookup().GetUsers();
 
             QC.Lib.Common.FillControl(cboRoute, dtusers);
+            
+            var uBom = new BOM(_id) { Dock = DockStyle.Fill };
+            radPageViewPage1.Controls.Add(uBom);
+            radPageViewPage2.Controls.Add(uBom);
+            radPageViewPage3.Controls.Add(uBom);
+
+
+            var lstEquipment = new EquipmentList(_id) { Dock = DockStyle.Fill };
+            var lstManpower = new PersonnelList(_id) { Dock = DockStyle.Fill };
+
+            radPageViewPage5.Controls.Add(lstEquipment);
+            radPageViewPage6.Controls.Add(lstManpower);
+
+            var data = new Repository.Project().GetProjectbyId(id);
+            txtProject.Text = data["project"].ToString();
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -49,6 +66,9 @@ namespace QC.Forms.Entry
         private void saveButton_Click(object sender, EventArgs e)
         {
             (new Repository.Project()).SaveRoute(_id, _userid, QC.Lib.Common.ComboVal(cboRoute), txtComment.Text);
+
+            var frm = (new DesignPlanDetails(_id));
+            frm.Show();
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

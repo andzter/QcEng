@@ -58,10 +58,10 @@
             // 
             this.radTitleBar1.RootElement.ApplyShapeToControl = true;
             this.radTitleBar1.RootElement.Shape = this.roundRectShapeTitle;
-            this.radTitleBar1.Size = new System.Drawing.Size(697, 23);
+            this.radTitleBar1.Size = new System.Drawing.Size(760, 23);
             this.radTitleBar1.TabIndex = 0;
             this.radTitleBar1.TabStop = false;
-            this.radTitleBar1.Text = "LoginForm";
+            this.radTitleBar1.Text = "Login";
             // 
             // roundRectShapeTitle
             // 
@@ -142,7 +142,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(185, 291);
+            this.panel1.Size = new System.Drawing.Size(185, 370);
             this.panel1.TabIndex = 17;
             // 
             // panel2
@@ -157,7 +157,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(185, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(402, 291);
+            this.panel2.Size = new System.Drawing.Size(417, 370);
             this.panel2.TabIndex = 18;
             // 
             // lblMessage
@@ -177,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(587, 291);
+            this.ClientSize = new System.Drawing.Size(602, 370);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.radTitleBar1);
@@ -187,7 +187,7 @@
             this.Name = "LoginForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginForm";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.radTitleBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

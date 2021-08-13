@@ -24,7 +24,7 @@ namespace QC.Forms.List
 
         protected override DataTable GetData()
         {
-            return new Repository.Project().CommunicationProject(_userId);
+            return new Repository.Communications().GetList(_userId);
         }
 
         protected override void NewRecord()

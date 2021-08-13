@@ -45,10 +45,15 @@ namespace QC.Forms.Entry
             this.pnlTop = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtRem = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabRouting = new System.Windows.Forms.TabPage();
             this.radGrid = new Telerik.WinControls.UI.RadGridView();
+            this.tabProject = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.radDocdate)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabRouting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).BeginInit();
             this.SuspendLayout();
@@ -177,7 +182,7 @@ namespace QC.Forms.Entry
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(742, 323);
+            this.pnlTop.Size = new System.Drawing.Size(915, 323);
             this.pnlTop.TabIndex = 93;
             // 
             // groupBox1
@@ -200,34 +205,68 @@ namespace QC.Forms.Entry
             this.txtRem.Size = new System.Drawing.Size(707, 71);
             this.txtRem.TabIndex = 86;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabRouting);
+            this.tabControl1.Controls.Add(this.tabProject);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 323);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(915, 316);
+            this.tabControl1.TabIndex = 95;
+            // 
+            // tabRouting
+            // 
+            this.tabRouting.Controls.Add(this.radGrid);
+            this.tabRouting.Location = new System.Drawing.Point(4, 22);
+            this.tabRouting.Name = "tabRouting";
+            this.tabRouting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabRouting.Size = new System.Drawing.Size(907, 290);
+            this.tabRouting.TabIndex = 0;
+            this.tabRouting.Text = "Routing";
+            this.tabRouting.UseVisualStyleBackColor = true;
+            // 
             // radGrid
             // 
             this.radGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radGrid.Location = new System.Drawing.Point(0, 323);
+            this.radGrid.Location = new System.Drawing.Point(3, 3);
             // 
             // 
             // 
             this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGrid.Name = "radGrid";
-            this.radGrid.Size = new System.Drawing.Size(742, 241);
-            this.radGrid.TabIndex = 94;
+            this.radGrid.Size = new System.Drawing.Size(901, 284);
+            this.radGrid.TabIndex = 95;
+            // 
+            // tabProject
+            // 
+            this.tabProject.Location = new System.Drawing.Point(4, 22);
+            this.tabProject.Name = "tabProject";
+            this.tabProject.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProject.Size = new System.Drawing.Size(313, 189);
+            this.tabProject.TabIndex = 1;
+            this.tabProject.Text = "Projects";
+            this.tabProject.UseVisualStyleBackColor = true;
             // 
             // CommProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 614);
-            this.Controls.Add(this.radGrid);
+            this.ClientSize = new System.Drawing.Size(915, 689);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.pnlTop);
             this.Name = "CommProject";
             this.Text = "New Communication";
             this.Controls.SetChildIndex(this.pnlTop, 0);
-            this.Controls.SetChildIndex(this.radGrid, 0);
+            this.Controls.SetChildIndex(this.tabControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.radDocdate)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabRouting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).EndInit();
             this.ResumeLayout(false);
@@ -251,6 +290,9 @@ namespace QC.Forms.Entry
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRem;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabRouting;
         private Telerik.WinControls.UI.RadGridView radGrid;
+        private System.Windows.Forms.TabPage tabProject;
     }
 }

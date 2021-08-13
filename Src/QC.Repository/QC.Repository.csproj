@@ -42,8 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Communications.cs" />
     <Compile Include="DUPA.cs" />
+    <Compile Include="DupaDetailsEquipment.cs" />
+    <Compile Include="DupaDetailsLabor.cs" />
+    <Compile Include="DupaDetailsMaterial.cs" />
+    <Compile Include="DupaHeader.cs" />
+    <Compile Include="EquipmentCost.cs" />
+    <Compile Include="EquipmentCostManual.cs" />
+    <Compile Include="Inspection.cs" />
+    <Compile Include="LaborCost.cs" />
+    <Compile Include="LaborCostManual.cs" />
     <Compile Include="Lookup.cs" />
+    <Compile Include="MaterialCostcs.cs" />
+    <Compile Include="MaterialCostManual.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectBom.cs" />
     <Compile Include="ProjectBom2.cs" />

@@ -36,6 +36,9 @@ namespace QC.Engineering
             this.btnAuditTrail = new System.Windows.Forms.Button();
             this.btnAuthorization = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
+            this.btnEquipmentCost = new System.Windows.Forms.Button();
+            this.btnLaborCost = new System.Windows.Forms.Button();
+            this.btnMaterialCost = new System.Windows.Forms.Button();
             this.btnDupa = new System.Windows.Forms.Button();
             this.btnAdministration = new System.Windows.Forms.Button();
             this.btnDEDFolders = new System.Windows.Forms.Button();
@@ -72,8 +75,9 @@ namespace QC.Engineering
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 749);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 861);
             this.panelSideMenu.TabIndex = 0;
+            this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
             // panelAdministration
             // 
@@ -82,11 +86,14 @@ namespace QC.Engineering
             this.panelAdministration.Controls.Add(this.btnAuditTrail);
             this.panelAdministration.Controls.Add(this.btnAuthorization);
             this.panelAdministration.Controls.Add(this.btnUsers);
+            this.panelAdministration.Controls.Add(this.btnEquipmentCost);
+            this.panelAdministration.Controls.Add(this.btnLaborCost);
+            this.panelAdministration.Controls.Add(this.btnMaterialCost);
             this.panelAdministration.Controls.Add(this.btnDupa);
             this.panelAdministration.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAdministration.Location = new System.Drawing.Point(0, 339);
             this.panelAdministration.Name = "panelAdministration";
-            this.panelAdministration.Size = new System.Drawing.Size(250, 230);
+            this.panelAdministration.Size = new System.Drawing.Size(250, 360);
             this.panelAdministration.TabIndex = 16;
             // 
             // btnConfiguration
@@ -98,15 +105,14 @@ namespace QC.Engineering
             this.btnConfiguration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguration.ForeColor = System.Drawing.Color.Silver;
             this.btnConfiguration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguration.Location = new System.Drawing.Point(0, 180);
+            this.btnConfiguration.Location = new System.Drawing.Point(0, 315);
             this.btnConfiguration.Name = "btnConfiguration";
             this.btnConfiguration.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConfiguration.Size = new System.Drawing.Size(250, 45);
-            this.btnConfiguration.TabIndex = 7;
+            this.btnConfiguration.TabIndex = 19;
             this.btnConfiguration.Text = "  Configuration";
             this.btnConfiguration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfiguration.UseVisualStyleBackColor = true;
-            this.btnConfiguration.Click += new System.EventHandler(this.btnConfiguration_Click);
             // 
             // btnAuditTrail
             // 
@@ -117,15 +123,14 @@ namespace QC.Engineering
             this.btnAuditTrail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAuditTrail.ForeColor = System.Drawing.Color.Silver;
             this.btnAuditTrail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAuditTrail.Location = new System.Drawing.Point(0, 135);
+            this.btnAuditTrail.Location = new System.Drawing.Point(0, 270);
             this.btnAuditTrail.Name = "btnAuditTrail";
             this.btnAuditTrail.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnAuditTrail.Size = new System.Drawing.Size(250, 45);
-            this.btnAuditTrail.TabIndex = 6;
+            this.btnAuditTrail.TabIndex = 7;
             this.btnAuditTrail.Text = "  Audit Trail";
             this.btnAuditTrail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAuditTrail.UseVisualStyleBackColor = true;
-            this.btnAuditTrail.Click += new System.EventHandler(this.btnAuditTrail_Click);
             // 
             // btnAuthorization
             // 
@@ -136,15 +141,14 @@ namespace QC.Engineering
             this.btnAuthorization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAuthorization.ForeColor = System.Drawing.Color.Silver;
             this.btnAuthorization.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAuthorization.Location = new System.Drawing.Point(0, 90);
+            this.btnAuthorization.Location = new System.Drawing.Point(0, 225);
             this.btnAuthorization.Name = "btnAuthorization";
             this.btnAuthorization.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnAuthorization.Size = new System.Drawing.Size(250, 45);
-            this.btnAuthorization.TabIndex = 5;
+            this.btnAuthorization.TabIndex = 18;
             this.btnAuthorization.Text = "  Authorization";
             this.btnAuthorization.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAuthorization.UseVisualStyleBackColor = true;
-            this.btnAuthorization.Click += new System.EventHandler(this.btnAuthorization_Click);
             // 
             // btnUsers
             // 
@@ -155,15 +159,71 @@ namespace QC.Engineering
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.ForeColor = System.Drawing.Color.Silver;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(0, 45);
+            this.btnUsers.Location = new System.Drawing.Point(0, 180);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnUsers.Size = new System.Drawing.Size(250, 45);
-            this.btnUsers.TabIndex = 4;
+            this.btnUsers.TabIndex = 6;
             this.btnUsers.Text = "  Users";
             this.btnUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsers.UseVisualStyleBackColor = true;
-            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            // 
+            // btnEquipmentCost
+            // 
+            this.btnEquipmentCost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEquipmentCost.FlatAppearance.BorderSize = 0;
+            this.btnEquipmentCost.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnEquipmentCost.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnEquipmentCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipmentCost.ForeColor = System.Drawing.Color.Silver;
+            this.btnEquipmentCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipmentCost.Location = new System.Drawing.Point(0, 135);
+            this.btnEquipmentCost.Name = "btnEquipmentCost";
+            this.btnEquipmentCost.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnEquipmentCost.Size = new System.Drawing.Size(250, 45);
+            this.btnEquipmentCost.TabIndex = 17;
+            this.btnEquipmentCost.Text = "  Equipment Cost";
+            this.btnEquipmentCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEquipmentCost.UseVisualStyleBackColor = true;
+            this.btnEquipmentCost.Click += new System.EventHandler(this.btnEquipmentCost_Click);
+            // 
+            // btnLaborCost
+            // 
+            this.btnLaborCost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLaborCost.FlatAppearance.BorderSize = 0;
+            this.btnLaborCost.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnLaborCost.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnLaborCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLaborCost.ForeColor = System.Drawing.Color.Silver;
+            this.btnLaborCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLaborCost.Location = new System.Drawing.Point(0, 90);
+            this.btnLaborCost.Name = "btnLaborCost";
+            this.btnLaborCost.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnLaborCost.Size = new System.Drawing.Size(250, 45);
+            this.btnLaborCost.TabIndex = 5;
+            this.btnLaborCost.Text = "  Labor Cost";
+            this.btnLaborCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLaborCost.UseVisualStyleBackColor = true;
+            this.btnLaborCost.Click += new System.EventHandler(this.btnLaborCost_Click);
+            // 
+            // btnMaterialCost
+            // 
+            this.btnMaterialCost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMaterialCost.FlatAppearance.BorderSize = 0;
+            this.btnMaterialCost.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnMaterialCost.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnMaterialCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaterialCost.ForeColor = System.Drawing.Color.Silver;
+            this.btnMaterialCost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaterialCost.Location = new System.Drawing.Point(0, 45);
+            this.btnMaterialCost.Name = "btnMaterialCost";
+            this.btnMaterialCost.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnMaterialCost.Size = new System.Drawing.Size(250, 45);
+            this.btnMaterialCost.TabIndex = 4;
+            this.btnMaterialCost.Text = "  Material Cost";
+            this.btnMaterialCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaterialCost.UseVisualStyleBackColor = true;
+            this.btnMaterialCost.Click += new System.EventHandler(this.btnMaterialCost_Click);
             // 
             // btnDupa
             // 
@@ -198,7 +258,7 @@ namespace QC.Engineering
             this.btnAdministration.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnAdministration.Size = new System.Drawing.Size(250, 45);
             this.btnAdministration.TabIndex = 15;
-            this.btnAdministration.Text = "  Administration";
+            this.btnAdministration.Text = "Administration";
             this.btnAdministration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdministration.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdministration.UseVisualStyleBackColor = true;
@@ -313,10 +373,10 @@ namespace QC.Engineering
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.Color.Silver;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 704);
+            this.btnExit.Location = new System.Drawing.Point(0, 821);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(250, 45);
+            this.btnExit.Size = new System.Drawing.Size(250, 40);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "  Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -351,14 +411,14 @@ namespace QC.Engineering
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(786, 749);
+            this.panelChildForm.Size = new System.Drawing.Size(786, 861);
             this.panelChildForm.TabIndex = 2;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(272, 261);
+            this.pictureBox9.Location = new System.Drawing.Point(272, 317);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(242, 236);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -370,14 +430,16 @@ namespace QC.Engineering
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1036, 749);
+            this.ClientSize = new System.Drawing.Size(1036, 861);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelAdministration.ResumeLayout(false);
@@ -405,10 +467,13 @@ namespace QC.Engineering
         private System.Windows.Forms.Button btnMyTask;
         private System.Windows.Forms.Button btnCommunication;
         private System.Windows.Forms.Panel panelAdministration;
-        private System.Windows.Forms.Button btnConfiguration;
         private System.Windows.Forms.Button btnAuditTrail;
-        private System.Windows.Forms.Button btnAuthorization;
         private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.Button btnLaborCost;
+        private System.Windows.Forms.Button btnMaterialCost;
         private System.Windows.Forms.Button btnDupa;
+        private System.Windows.Forms.Button btnConfiguration;
+        private System.Windows.Forms.Button btnAuthorization;
+        private System.Windows.Forms.Button btnEquipmentCost;
     }
 }

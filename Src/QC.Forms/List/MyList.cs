@@ -21,7 +21,7 @@ namespace QC.Forms.List
 
         protected override DataTable GetData()
         {
-            return new Repository.Project().MyList(_userId);
+            return new Repository.Project().MyTask(_userId);
         }
 
         protected override void OpenRecord(GridViewDataRowInfo selectedrow)

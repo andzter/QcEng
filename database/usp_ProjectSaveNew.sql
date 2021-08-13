@@ -15,17 +15,19 @@ create procedure [dbo].usp_ProjectSaveNew
     @user [varchar](100)
 AS
 BEGIN
-  
+  declare @commid  [nvarchar](50) = @id
   if isnull(@id,'') = ''
   begin
 
 	declare @newid [nvarchar](50) = newId()
 
 	declare @refno varchar(50)
-       exec usp_CodeSeq 'REF','00000',@refno out 
+	declare @Refyr varchar(4) = 'REFNO-' +  cast(Year( getdate()) as varchar(4))
+    exec usp_CodeSeq  @Refyr,'00000',@refno out 
+    set @refno = cast(Year( getdate()) as varchar(4)) + '-' + @refno
 
 
-   INSERT INTO [dbo].[Projects]
+   INSERT INTO [dbo].Communication
            (  id, ReferenceNo, [Project], [DocDate], [DocSource], [Status], Remarks, createdby )
    select @newid, @refno, @Project, @DocDate, @DocSource, 'New', @remarks, @user
 
@@ -34,6 +36,7 @@ BEGIN
 
   INSERT INTO [dbo].[ProjectsHistory]
            ([Id]
+		   ,[CommId]
            ,[ProjectId]
            ,[RouteFrom]
            ,[RouteTo]
@@ -42,9 +45,9 @@ BEGIN
            ,[Status]
            ,[Remarks]
            ,[createdby])
-     select newid(),@newid, @user, null, getdate(), null, 'NEW', @remarks, @user
+     select newid(),@newid,'', @user, null, getdate(), null, 'NEW', @remarks, @user
            
-   select @newid
+   set  @newid
 
   end
   else
@@ -52,6 +55,11 @@ BEGIN
 	update  [dbo].[Projects]
 	  set [Project] = @Project, DocSource = @DocSource, remarks = @remarks, updatedby = @user, updateddate = getdate(), RoutedTo = @routeTo
 	     where id = @id
+
+
+   declare @date datetime = getdate()
+
+  select max([RouteDate]) from [ProjectsHistory] where [ProjectId] = @id
 
   INSERT INTO [dbo].[ProjectsHistory]
            ([Id]
@@ -63,7 +71,7 @@ BEGIN
            ,[Status]
            ,[Remarks]
            ,[createdby])
-     select newid(),@id, @user, @routeTo, getdate(), null, 'NEW', @remarks, @user
+     select newid(),@id, @user, @routeTo, isnull(@date, getdate()),  getdate(), 'NEW', @remarks, @user
 
     select @id
   end

@@ -1,5 +1,3 @@
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csprojAssemblyReference.cache
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CoreCompileInputs.cache
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll.config
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.pdb
@@ -19,6 +17,9 @@ E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\TelerikCommon.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.pdb
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.xml
@@ -35,6 +36,8 @@ E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.xml
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.xml
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
@@ -45,11 +48,181 @@ E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\pt-BR\Microsoft.Data.SqlClient
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csprojAssemblyReference.cache
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CoreCompileInputs.cache
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CopyComplete
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.pdb
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\TelerikCommon.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.xml
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.xml
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll.config
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Buffers.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Data.SqlClient.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Memory.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\TelerikCommon.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Buffers.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Data.SqlClient.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Memory.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csprojAssemblyReference.cache
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CoreCompileInputs.cache
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CopyComplete
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll.config
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\QC.Lib.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Buffers.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Data.SqlClient.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Memory.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\TelerikCommon.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Buffers.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Data.SqlClient.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Memory.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Text.Json.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\System.ValueTuple.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csprojAssemblyReference.cache
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CoreCompileInputs.cache
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CopyComplete
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Lib\obj\Debug\QC.Lib.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\QC.Lib.dll.config
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\QC.Lib.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\QC.Lib.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Buffers.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Data.SqlClient.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Memory.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Text.Json.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.ValueTuple.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\TelerikCommon.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Buffers.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Data.SqlClient.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Memory.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Numerics.Vectors.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Text.Encodings.Web.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Text.Json.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\System.ValueTuple.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.GridView.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\Telerik.WinControls.UI.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\obj\Debug\QC.Lib.csprojAssemblyReference.cache
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CoreCompileInputs.cache
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\obj\Debug\QC.Lib.csproj.CopyComplete
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\obj\Debug\QC.Lib.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Lib\obj\Debug\QC.Lib.pdb

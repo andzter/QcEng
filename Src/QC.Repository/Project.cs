@@ -12,19 +12,21 @@ namespace QC.Repository
 
         Lib.DataAccess dataacess = new Lib.DataAccess();
 
+
+        public DataTable GetAllCommunications()
+        {
+            return dataacess.GetDataTable("select * from vw_Communication");
+        }
+
         public DataTable GetAllProjects()
         {
             return dataacess.GetDataTable("select * from projects");
         }
 
-        public DataTable CommunicationProject(string userid)
+     
+        public DataTable MyTask(string userid)
         {
-            return dataacess.GetDataTable("select id,ReferenceNo, Project as Subject, DocDate, RoutedTo, Remarks  from projects");
-        }
-
-        public DataTable MyList(string userid)
-        {
-            return dataacess.GetDataTable("usp_GetMyProject", userid);
+            return dataacess.GetDataTable("usp_GetMyTask", userid);
         }
 
         public DataRow SaveNewProject(params object[] args)
@@ -49,7 +51,7 @@ namespace QC.Repository
 
         public DataTable GetProjectInspectionList(string userId)
         {
-            return dataacess.GetDataTable("GetProjectInspectionList", userId);
+            return dataacess.GetDataTable("usp_GetProjectInspectionList", userId);
         }
 
         public DataTable GetProjectHistory(string id)
@@ -63,6 +65,12 @@ namespace QC.Repository
             dataacess.ExecuteNonQuery("usp_ProjectSaveRoute", args);
         }
 
+        public DataTable GetDataTable(string sql)
+        {
+            return dataacess.GetDataTable(sql);
+        }
+
 
     }
 }
+

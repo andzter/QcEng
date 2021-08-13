@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Spreadsheet;
+using QC.Lib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls;
 using Telerik.WinControls.UI;
 
 namespace QC.Forms
@@ -90,6 +92,7 @@ namespace QC.Forms
 
                 lblTotal.Text = $"Total Records : {data.Rows.Count}";
 
+                InitGrid();
             }
             catch (Exception ex)
             {
@@ -165,6 +168,26 @@ namespace QC.Forms
 
         private void pnlTop_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+
+        protected virtual void InitGrid()
+        {
+            try
+            {
+                GridUtil.InitDefualtGrid(radGrid);
+               // GridUtil.ApplyConditionalFormatting(radGrid, ModuleCode + SelectedView);
+               // GridUtil.SetHideCols(radGrid, ModuleCode + SelectedView);
+               // GridUtil.SetColsIndex(radGrid, ModuleCode + SelectedView);
+               // GridUtil.SetColNames(radGrid, ModuleCode, _Config.ConnectionString);
+            }
+            catch (Exception ex)
+            {
+                //RadMessageBox.SetThemeName(_Config.Theme);
+                RadMessageBox.Show(this, "Error in Init Grid\n" + ex.Message, "Init Grid", MessageBoxButtons.OK, RadMessageIcon.Error);
+                return;
+            }
 
         }
     }

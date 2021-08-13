@@ -1,12 +1,17 @@
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QuickStart.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe.config
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.pdb
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.dll
@@ -22,26 +27,329 @@ E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Th
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialTeal.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\TelerikCommon.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.xml
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QuickStart.xml
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.xml
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
-E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
 E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
+E:\QC_Engr\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QuickStart.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe.config
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.CrystalDark.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Material.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialBlueGrey.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialPink.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialTeal.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\TelerikCommon.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
+C:\Development\Andy Copy\20210708\Eng\DevSource\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QuickStart.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe.config
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.pdb
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.CrystalDark.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Material.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialBlueGrey.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialPink.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialTeal.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\TelerikCommon.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll.config
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
+C:\Development\20210708 Eng Latest\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QuickStart.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe.config
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.exe
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Engineering.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.CrystalDark.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Material.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialBlueGrey.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialPink.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialTeal.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\TelerikCommon.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Forms.dll.config
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
+E:\QC_Engr\20210808\QC_Engr\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QuickStart.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Engineering.exe.config
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Engineering.exe
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Engineering.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Forms.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Lib.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Repository.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.CrystalDark.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.Material.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialBlueGrey.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialPink.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.Themes.MaterialTeal.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\TelerikCommon.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Forms.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Forms.dll.config
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Lib.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Lib.dll.config
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Repository.pdb
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\QC.Repository.dll.config
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.GridView.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.RadDock.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Telerik.WinControls.UI.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\DocumentFormat.OpenXml.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.csprojAssemblyReference.cache
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.LoginForm.resources
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.Main.resources
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.Properties.Resources.resources
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.GenerateResource.cache
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.exe.licenses
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CoreCompileInputs.cache
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.csproj.CopyComplete
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.exe
+E:\QC_Engr\Git\QcEng\Src\QC.Engineering\obj\Debug\QC.Engineering.pdb

@@ -4,20 +4,18 @@ SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
+GO 
+
+IF OBJECT_ID (N'Communication', N'U') IS NOT NULL 
+   Drop table Communication
 GO
 
-IF OBJECT_ID (N'Projects', N'U') IS NOT NULL 
-   Drop table Projects
-GO
-
-CREATE TABLE [dbo].[Projects](
+CREATE TABLE [dbo].[Communication](
     [Id] [nvarchar](50),
 	[ReferenceNo] [nvarchar](50),
-	[Project] [nvarchar](255),
-	[ProjectTitle] [nvarchar](500),
-	[ProjectType] [nvarchar](100),
+	[Project] [nvarchar](1000),
 	[DocDate] datetime,
-	[DocSource] [nvarchar](100) null,
+	[DocSource] [nvarchar](1000) null,
 	[Status] [nvarchar](100) null,
 	[Barangay] [nvarchar](100) null,
 	[District] [nvarchar](100) null,
@@ -25,7 +23,45 @@ CREATE TABLE [dbo].[Projects](
 	[Estimate] money default 0,
 	[ContractAmount] money default 0,
 	[Remarks] [nvarchar](max) null,
+	[RouteFrom]  [nvarchar](100) null,
+	[UserFrom]  [nvarchar](100) null,
+	[RouteTo]  [nvarchar](100) null,
+	[RouteUser]  [nvarchar](100) null,
+	[startdate] datetime null, 
+	[expirydate] datetime null, 
+	[revisedexpirydate] datetime null, 
+	[ammendedexpirydate] datetime null, 
+	[Deleted] bit default 0,
+	[createdby] [nvarchar](100) null,
+	[createddate] datetime default getdate(), 
+	[updatedby]  [nvarchar](100) null,
+	[updateddate]  datetime null,
+	[deletedby]  [nvarchar](100) null,
+	[deleteddate]  datetime null	
+) ON [PRIMARY]
+GO 
+
+IF OBJECT_ID (N'Projects', N'U') IS NOT NULL 
+   Drop table Projects
+GO
+
+CREATE TABLE [dbo].[Projects](
+    [Id] [nvarchar](50),
+	[CommId] [nvarchar](50),
+	[DEDNo] [nvarchar](50),
+	[Project] [nvarchar](1000),
+	[ProjectType] [nvarchar](100),
+	[DocDate] datetime,
+	[DocSource] [nvarchar](100) null,
+	[Status] [nvarchar](100) null,
+	[Barangay] [nvarchar](1000) null,
+	[District] [nvarchar](100) null,
+	[Agency] [nvarchar](100) null,
+	[Estimate] money default 0,
+	[ContractAmount] money default 0,
+	[Remarks] [nvarchar](max) null,
 	[RoutedTo]  [nvarchar](100) null,
+	[RouteUser]  [nvarchar](100) null,
 	[startdate] datetime null, 
 	[expirydate] datetime null, 
 	[revisedexpirydate] datetime null, 
@@ -46,9 +82,12 @@ GO
 
 CREATE TABLE [dbo].[ProjectsHistory](
     [Id] [nvarchar](50) default newid(),
-	[ProjectId] [nvarchar](50),
+	[CommId] [nvarchar](50),
+	[ProjectId] [nvarchar](50) null,
 	[RouteFrom] [nvarchar](50) null,
+	[UserFrom] [nvarchar](50) null,
 	[RouteTo] [nvarchar](50) null,
+	[RouteUser]  [nvarchar](100) null,
 	[DateFrom] datetime null,
 	[DateTo] datetime null,
 	[RouteDate] datetime default getdate(),
@@ -120,6 +159,7 @@ GO
 
 CREATE TABLE [dbo].[Inspection](
     [Id] [nvarchar](50) default newid(),
+	[CommId] [nvarchar](50),	
 	Evaluation  [nvarchar](max) null,
 	Recommendations [nvarchar](max) null,
 	[InspectedBy] [nvarchar](100) null,
@@ -146,7 +186,7 @@ GO
 
 CREATE TABLE [dbo].[InspectionDetails](
     [Id] [nvarchar](50) default newid(),
-	Descrition  [nvarchar](max) null,
+	Description  [nvarchar](max) null,
 	Recommendations [nvarchar](max) null,
 	[Seq] [int] null default 1, 
 	[createdby] [nvarchar](100) null,
@@ -197,6 +237,8 @@ CREATE TABLE [dbo].[RefLookUp](
 GO
 
 
+--select * from RefLookUp
+
 
 IF OBJECT_ID (N'Users', N'U') IS NOT NULL 
    drop table Users
@@ -209,7 +251,7 @@ CREATE TABLE [dbo].[Users](
 	[FirstName] [nvarchar](200) NULL,
 	[MiddleName] [nvarchar](100) NULL,
 	[Email] [nvarchar](200) NULL,
-	[Department] [nvarchar](200) NULL,
+	[Department] [nvarchar](100) NULL,
 	[Position] [nvarchar](200) NULL,
 	[Password] varbinary(100) NULL,
 	[PasswordChange] [datetime] NULL,
@@ -231,6 +273,25 @@ PRIMARY KEY CLUSTERED
 
 GO  
 
+IF OBJECT_ID (N'Teams', N'U') IS NOT NULL 
+   drop table Teams
+GO
+
+CREATE TABLE [dbo].[Teams](
+	[Id] [nvarchar](50) NOT NULL default newid(),
+	[Team] [nvarchar](255) NOT NULL,
+	[DisplaySeq] int default 0,
+	[Deleted] bit default 0,
+	[createdby] [nvarchar](100) null,
+	[createddate] datetime default getdate(), 
+	[updatedby]  [nvarchar](100) null,
+	[updateddate]  datetime default getdate(),
+	[deletedby]  [nvarchar](100) null,
+	[deletedate] datetime null 
+) ON [PRIMARY]
+
+GO
+
 
 
 IF OBJECT_ID (N'Roles', N'U') IS NOT NULL 
@@ -245,6 +306,25 @@ CREATE TABLE [dbo].[Roles](
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+IF OBJECT_ID (N'UserTeam', N'U') IS NOT NULL 
+   drop table UserTeams
+GO
+
+CREATE TABLE [dbo].[UserTeam](
+    [Id] [nvarchar](50) NOT NULL default newid(),
+	[UserId] [nvarchar](50) NOT NULL,
+	[TeamId] [nvarchar](50) NOT NULL,
+	[Deleted] bit default 0,
+	[createdby] [nvarchar](100) null,
+	[createddate] datetime default getdate(), 
+	[updatedby]  [nvarchar](100) null,
+	[updateddate]  datetime default getdate(),
+	[deletedby]  [nvarchar](100) null,
+	[deletedate] datetime null 
 ) ON [PRIMARY]
 
 GO
@@ -314,9 +394,7 @@ CREATE TABLE CodeSeq
    [Seq] [int]
 )  ON [PRIMARY]
 GO
-
-
-
+ 
 
 IF OBJECT_ID (N'ProjectEquipments', N'U') IS NOT NULL 
    Drop table ProjectEquipments
@@ -335,9 +413,7 @@ CREATE TABLE [dbo].[ProjectEquipments](
 	[updateddate]  datetime null
 ) ON [PRIMARY]
 GO
-
-
-
+ 
 
 IF OBJECT_ID (N'ProjectManpower', N'U') IS NOT NULL 
    Drop table ProjectManpower
@@ -374,9 +450,6 @@ CREATE TABLE [dbo].[ProjectCertification](
 	[updateddate]  datetime null
 ) ON [PRIMARY]
 GO
-
-
-
 
 IF OBJECT_ID (N'DUPA', N'U') IS NOT NULL 
    drop table DUPA

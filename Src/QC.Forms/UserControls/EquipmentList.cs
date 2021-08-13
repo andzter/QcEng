@@ -16,5 +16,24 @@ namespace QC.Forms.UserControls
         {
             InitializeComponent();
         }
+
+        protected virtual DataTable GetData()
+        {
+            //return null;
+            return new QC.Repository.Project().GetDataTable("select Equipment [Name of Equipment], UnitNo [No.Of Unit] from[ProjectEquipments]");
+
+           
+
+
+
+        }
+
+
+        public EquipmentList(string projectId)
+        {
+            InitializeComponent();
+            radGrid.DataSource = GetData();
+
+        }
     }
 }

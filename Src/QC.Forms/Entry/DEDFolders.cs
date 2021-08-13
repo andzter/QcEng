@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QC.Forms.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,10 @@ namespace QC.Forms.Entry
         public DEDFolders()
         {
             InitializeComponent();
+
+            var uc = new AddNewProject() {Dock= DockStyle.Fill };
+
+            radPageViewPage1.Controls.Add(uc);
         }
 
         public DEDFolders(string id)
@@ -31,6 +36,13 @@ namespace QC.Forms.Entry
            
             _id = id;
 
+            var uc = new AddNewProject();
+ 
+
+            radPageViewPage1.Controls.Add(uc);
+
+            var data = new Repository.Project().GetProjectbyId(id);
+            txtProject.Text = data["project"].ToString();
 
         }
 

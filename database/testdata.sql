@@ -101,3 +101,50 @@ exec usp_Login_user 'USER1', 'P@ssword123'
 
 
 
+
+truncate table teams
+GO
+insert into teams (Team, DisplaySeq)
+select 'Inspection Team', 4
+union select 'Eng Team', 5
+union select 'Heads', 3
+union select 'Support', 6
+union select 'Department Heads', 1
+union select 'Division Heads', 2
+GO
+
+
+--select id, username from users
+
+select id, username from users
+select * from teams
+select * from userteam
+
+truncate table 
+
+insert into userteam(teamId, userId)
+select teamId, userId from (
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Division Heads' and u.username = 'IRVJ'
+union
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Department Heads' and u.username = 'FDLDG'
+union
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Heads' and u.username = 'LBR'
+union
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Eng Team' and u.username = 'TEAMLEAD3'
+union
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Inspection Team' and u.username = 'TEAMLEAD2'
+union
+select t.id as teamId, t.team, u.id as userId, u.username  from teams t 
+left join users u on t.team = 'Support' and u.username = 'TEAMLEAD4'
+) x
+where isnull(username,'') <> ''
+
+
+select * from users
+
+select * from projectshistory

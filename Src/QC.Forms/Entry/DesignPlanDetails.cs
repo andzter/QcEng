@@ -31,6 +31,9 @@ namespace QC.Forms.Entry
 
             var dtusers = new Repository.Lookup().GetUsers();
             QC.Lib.Common.FillControl(cboRoute, dtusers);
+
+            var data = new Repository.Project().GetProjectbyId(id);
+            txtProject.Text = data["project"].ToString();
         }
     }
 }

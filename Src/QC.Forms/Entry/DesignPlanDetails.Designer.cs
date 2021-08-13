@@ -33,7 +33,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelBottom = new System.Windows.Forms.Panel();
+            this.cancelButton = new Telerik.WinControls.UI.RadButton();
+            this.saveButton = new Telerik.WinControls.UI.RadButton();
             this.panelInfo = new System.Windows.Forms.Panel();
+            this.radTextBoxControl3 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBoxControl2 = new Telerik.WinControls.UI.RadTextBoxControl();
@@ -46,17 +50,16 @@
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
-            this.firstNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtProject = new Telerik.WinControls.UI.RadTextBoxControl();
             this.middleNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
             this.lastNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.cancelButton = new Telerik.WinControls.UI.RadButton();
-            this.saveButton = new Telerik.WinControls.UI.RadButton();
-            this.radTextBoxControl3 = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
             this.panelInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             this.radLabel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
@@ -70,12 +73,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
             this.radLabel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstNameTextBoxControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,6 +129,26 @@
             this.panelBottom.Size = new System.Drawing.Size(891, 62);
             this.panelBottom.TabIndex = 72;
             // 
+            // cancelButton
+            // 
+            this.cancelButton.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.cancelButton.Location = new System.Drawing.Point(92, 24);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(70, 26);
+            this.cancelButton.TabIndex = 65;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.ThemeName = "MedicalAppTheme";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.saveButton.Location = new System.Drawing.Point(12, 24);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(70, 26);
+            this.saveButton.TabIndex = 64;
+            this.saveButton.Text = "Save";
+            this.saveButton.ThemeName = "MedicalAppTheme";
+            // 
             // panelInfo
             // 
             this.panelInfo.Controls.Add(this.radTextBoxControl3);
@@ -142,7 +162,7 @@
             this.panelInfo.Controls.Add(this.radLabel1);
             this.panelInfo.Controls.Add(this.radLabel2);
             this.panelInfo.Controls.Add(this.radLabel11);
-            this.panelInfo.Controls.Add(this.firstNameTextBoxControl);
+            this.panelInfo.Controls.Add(this.txtProject);
             this.panelInfo.Controls.Add(this.middleNameTextBoxControl);
             this.panelInfo.Controls.Add(this.lastNameTextBoxControl);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -150,6 +170,23 @@
             this.panelInfo.Name = "panelInfo";
             this.panelInfo.Size = new System.Drawing.Size(891, 160);
             this.panelInfo.TabIndex = 71;
+            // 
+            // radTextBoxControl3
+            // 
+            this.radTextBoxControl3.Location = new System.Drawing.Point(569, 96);
+            this.radTextBoxControl3.Name = "radTextBoxControl3";
+            this.radTextBoxControl3.Size = new System.Drawing.Size(287, 39);
+            this.radTextBoxControl3.TabIndex = 102;
+            this.radTextBoxControl3.ThemeName = "MedicalAppTheme";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(496, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "Comments :";
             // 
             // radLabel5
             // 
@@ -254,13 +291,13 @@
             this.radLabel12.Text = "Date of Expiry";
             this.radLabel12.ThemeName = "MedicalAppTheme";
             // 
-            // firstNameTextBoxControl
+            // txtProject
             // 
-            this.firstNameTextBoxControl.Location = new System.Drawing.Point(134, 15);
-            this.firstNameTextBoxControl.Name = "firstNameTextBoxControl";
-            this.firstNameTextBoxControl.Size = new System.Drawing.Size(737, 20);
-            this.firstNameTextBoxControl.TabIndex = 54;
-            this.firstNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.txtProject.Location = new System.Drawing.Point(134, 15);
+            this.txtProject.Name = "txtProject";
+            this.txtProject.Size = new System.Drawing.Size(737, 20);
+            this.txtProject.TabIndex = 54;
+            this.txtProject.ThemeName = "MedicalAppTheme";
             // 
             // middleNameTextBoxControl
             // 
@@ -277,43 +314,6 @@
             this.lastNameTextBoxControl.Size = new System.Drawing.Size(356, 20);
             this.lastNameTextBoxControl.TabIndex = 56;
             this.lastNameTextBoxControl.ThemeName = "MedicalAppTheme";
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.cancelButton.Location = new System.Drawing.Point(92, 24);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(70, 26);
-            this.cancelButton.TabIndex = 65;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.ThemeName = "MedicalAppTheme";
-            // 
-            // saveButton
-            // 
-            this.saveButton.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.saveButton.Location = new System.Drawing.Point(12, 24);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(70, 26);
-            this.saveButton.TabIndex = 64;
-            this.saveButton.Text = "Save";
-            this.saveButton.ThemeName = "MedicalAppTheme";
-            // 
-            // radTextBoxControl3
-            // 
-            this.radTextBoxControl3.Location = new System.Drawing.Point(569, 96);
-            this.radTextBoxControl3.Name = "radTextBoxControl3";
-            this.radTextBoxControl3.Size = new System.Drawing.Size(287, 39);
-            this.radTextBoxControl3.TabIndex = 102;
-            this.radTextBoxControl3.ThemeName = "MedicalAppTheme";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(496, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Comments :";
             // 
             // DesignPlanDetails
             // 
@@ -334,8 +334,11 @@
             this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             this.radLabel5.ResumeLayout(false);
             this.radLabel5.PerformLayout();
@@ -352,12 +355,9 @@
             this.radLabel11.ResumeLayout(false);
             this.radLabel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstNameTextBoxControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -383,7 +383,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadLabel radLabel11;
         private Telerik.WinControls.UI.RadLabel radLabel12;
-        private Telerik.WinControls.UI.RadTextBoxControl firstNameTextBoxControl;
+        private Telerik.WinControls.UI.RadTextBoxControl txtProject;
         private Telerik.WinControls.UI.RadTextBoxControl middleNameTextBoxControl;
         private Telerik.WinControls.UI.RadTextBoxControl lastNameTextBoxControl;
         private Telerik.WinControls.UI.RadButton cancelButton;

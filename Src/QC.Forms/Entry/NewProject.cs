@@ -18,24 +18,11 @@ namespace QC.Forms.Entry
         public NewProject()
         {
             InitializeComponent();
-        }
-
-        public NewProject(string id)
-        {
-            InitializeComponent();
-
-            MessageBox.Show(id);
-            var data = new Repository.Project().GetProjectbyId(id);
-            txtrefno.Text = data["referenceNo"].ToString();
-            txtproject.Text = data["project"].ToString();
-            txtdocsource.Text = data["docsource"].ToString();
-            txtremarks.Text = data["remarks"].ToString();
-            _id = id;
-        }
+        } 
 
         protected override void SaveEntry()
         { 
-            new Repository.Project().SaveNewProject(_id, txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text,null, _userid);
+            new Repository.Communications().Save("", txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text,null, _userid);
 
         }
     }
