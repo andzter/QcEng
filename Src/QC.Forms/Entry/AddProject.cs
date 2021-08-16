@@ -29,9 +29,9 @@ namespace QC.Forms.Entry
 
             txtProject.Text = record["Project"].ToString();
 
-            var dtusers = new Repository.Lookup().GetUsers();
+            var dtTeams = new Repository.Lookup().GetTeams();
 
-            Lib.Common.FillControl(cboRoute, dtusers);
+            Lib.Common.FillControl(cboRoute, dtTeams);
 
         }
 

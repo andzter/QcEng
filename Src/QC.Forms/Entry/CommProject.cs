@@ -41,7 +41,7 @@ namespace QC.Forms.Entry
             radGrid.AllowEditRow = false;
             radGrid.DataSource = new Repository.Communications().GetHistory(id, _userid);
 
-            var uproj = new UserControls.CommProjects() { CommunicationId = id, Dock = DockStyle.Fill};
+            var uproj = new UserControls.CommProjects(id) { CommunicationId = id, Dock = DockStyle.Fill};
             tabProject.Controls.Add(uproj);
 
             _id = id;

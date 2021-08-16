@@ -70,7 +70,15 @@ namespace QC.Forms.UserControls
             }
         }
 
-        public CommProjects()
+        public CommProjects(string commId)
+        {
+            _commid = commId;
+            CommLoad();
+
+        }
+
+
+        private void CommLoad()
         {
             InitializeComponent();
 
@@ -85,6 +93,12 @@ namespace QC.Forms.UserControls
             this.radGrid.AllowEditRow = false;
             //this.radGrid.EnableFiltering = true;
             LoadData();
+        }
+
+
+        public CommProjects()
+        {
+            CommLoad();
 
         }
 
