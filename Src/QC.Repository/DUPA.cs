@@ -13,7 +13,13 @@ namespace QC.Repository
 
         public DataTable GetDUPA()
         {
-            return dataacess.GetDataTable("select id, ItemCode as [Item Code], Description, Unit, UnitCost as [Unit Cost] from DUPA");
+            return GetDUPA(Lib.Settings.GetSetting("userid"));
+        }
+
+        public DataTable GetDUPA(params object[] args)
+        {
+            return dataacess.GetDataTable("usp_DUPAList", args);
+
         }
 
         public DataRow SaveDUPA(params object[] args)

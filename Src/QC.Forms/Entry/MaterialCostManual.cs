@@ -13,7 +13,7 @@ namespace QC.Forms.Entry
 {
     public partial class MaterialCostManual : Telerik.WinControls.UI.RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 

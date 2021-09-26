@@ -26,7 +26,7 @@ namespace QC.Forms.List
         protected override void NewRecord()
         {
             Entry.MaterialCost oEntry = new Entry.MaterialCost();
-            oEntry.UpdateHandler += Record_Updated;
+            oEntry.UpdateHandler += GridRecord_Updated;
             oEntry.Show();
 
             
@@ -38,7 +38,7 @@ namespace QC.Forms.List
             {
 
                 Entry.MaterialCost oEntry = new Entry.MaterialCost(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.UpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

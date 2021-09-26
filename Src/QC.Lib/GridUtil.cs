@@ -217,6 +217,35 @@ namespace QC.Lib
             }
         }
 
+        public static void HideColumn(RadGridView grd, string colName)
+        {
+            try
+            {
+                if (grd.Columns[colName] != null)
+                {
+                    grd.Columns[colName].IsVisible = false;
+                    grd.Columns[colName].VisibleInColumnChooser = false;
+                }
+
+            }
+            catch { return; }
+        }
+
+        public static void HideColumn(RadGridView grd, int index)
+        {
+            try
+            {
+                if (grd.Columns[index] != null)
+                {
+
+                    grd.Columns[index].IsVisible = false;
+                    grd.Columns[index].VisibleInColumnChooser = false;
+                }
+
+            }
+            catch { }
+        }
+
         private static ConditionTypes contype(string ctype)
         {
             switch (ctype)

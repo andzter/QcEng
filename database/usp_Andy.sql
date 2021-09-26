@@ -4,34 +4,38 @@ IF OBJECT_ID('usp_CodeSeq', 'P') IS NOT NULL
 GO
 
 
-CREATE procedure usp_CodeSeq   
-  @code varchar(50), 
-  @pad varchar(20),
-  @nextseq varchar(20) output
+CREATE procedure usp_ProjectSaveHeader   
+  @id varchar(50),
+  @Limits varchar(100),
+  @Lenght varchar(100),
+  @Appropriation varchar(1000),
+  @Scopeofwork varchar(max),
+  @DateEstimated datetime,
+  @Rightofway varchar(100),
+  @PavementWidth varchar(100),
+  @SidewalkWidth varchar(100),
+  @PavementType varchar(100),
+  @Duration varchar(255)
 AS
-BEGIN
-set @nextseq = ''
-declare @seq int
+BEGIN 
+ 
+UPDATE [dbo].[Projects]
+   SET  [Limits] = @Limits
+        ,[Lenght] = @Lenght
+        ,[Appropriation] =  @Appropriation
+        ,[Scopeofwork] = @Appropriation
+        ,[DateEstimated] = @DateEstimated
+        ,[Rightofway] = @Rightofway
+        ,[PavementWidth] = @PavementWidth
+        ,[SidewalkWidth] = @SidewalkWidth
+        ,[PavementType] = @PavementType
+        ,[Duration] = @Duration
+   WHERE Id = @id
 
-select @seq = count(seq) from CodeSeq where Code = @code
-
-if @seq = 0
-begin
-   insert into CodeSeq(code,seq) select @code,2
-   set @seq = 1
-end
-else
-begin
-   select @seq = seq from CodeSeq where Code = @code   
-   update CodeSeq set seq = seq + 1 where Code = @code   
-end
-
-if len(@pad) = 0
-  set @nextseq = cast(@seq as varchar(20))
-else
-  set @nextseq =reverse(substring(reverse(@pad + cast(@seq as varchar(20))),1,len(@pad)))
 END
 GO
+
+select * from Users 
 
 
 
@@ -64,103 +68,9 @@ END
 GO
 
 
-
-IF OBJECT_ID('usp_ProjectDesignList', 'P') IS NOT NULL
-	DROP PROC usp_ProjectDesignList
-GO
-
-
-CREATE procedure usp_ProjectDesignList   
-  @user varchar(50)
-AS
-BEGIN
-  select Id, ReferenceNo, Project as [Subject], [Status] from Projects
-     where RoutedTo = @user  or isnull(RoutedTo ,'') =''
-END
-GO
-
-
-IF OBJECT_ID('usp_ProjectFolderList', 'P') IS NOT NULL
-	DROP PROC usp_ProjectFolderList
-GO
-
-
-CREATE procedure usp_ProjectFolderList   
-  @user varchar(50)
-AS
-BEGIN
-  select Id, ReferenceNo, Project as [Subject], [Status] from Projects
-     where RoutedTo = @user  or isnull(RoutedTo ,'') =''
-END
-GO
-
-
-
-IF OBJECT_ID('GetProjectInspectionList', 'P') IS NOT NULL
-	DROP PROC GetProjectInspectionList
-GO
-
-
-CREATE procedure GetProjectInspectionList   
-  @user varchar(50)
-AS
-BEGIN
-  select Id, ReferenceNo, Project as [Subject], [Status] from Projects
-     where RoutedTo = @user or isnull(RoutedTo ,'') =''
-END
-GO
-
-
-
-IF OBJECT_ID('usp_ProjectSaveRoute', 'P') IS NOT NULL
-	DROP PROC usp_ProjectSaveRoute
-GO
-
-
-CREATE procedure usp_ProjectSaveRoute   
-  @projectId varchar(50),
-  @user varchar(50),
-  @routeTo varchar(50),
-  @comments  varchar(max)
-AS
-BEGIN
  
-
-INSERT INTO [dbo].[ProjectsHistory]
-           ( [ProjectId]
-           ,[RouteFrom]
-           ,[RouteTo]
-           ,[RouteDate]
-           ,[Remarks]
-           ,[createdby])
-          select @projectId, @user, @routeTo, getdate(), @comments, @user
-
-END
-GO
-
-IF OBJECT_ID('GetProjectHistory', 'P') IS NOT NULL
-	DROP PROC GetProjectHistory
-GO
-
-
-CREATE procedure GetProjectHistory   
-  @id varchar(50)
-AS
-BEGIN
-  select u1.UserName as RouteFrom    , isnull(u2.UserName, '') as [Route To], isnull(RouteDate, h.createdDate) as [Date], h.Remarks as comments, 
-    DATEDIFF(day,  Isnull(DateFrom, h.createddate), Isnull(RouteDate, getdate()))    Days  from ProjectsHistory h
-    left join Users u1 on h.RouteFrom = u1.id
-	left join Users u2 on h.RouteTo = u2.id
-     where h.ProjectId = @id
-END
-GO
-
-
-select * from ProjectsHistory
-
- 
-select * from users
-  
+    
+	 
 
 
 update users set LastName = 'Verzosa, JR.', FirstName = 'Isagani', MiddleName = 'R.'

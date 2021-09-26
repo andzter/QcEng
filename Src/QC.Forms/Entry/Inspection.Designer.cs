@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            this.components = new System.ComponentModel.Container();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.lastNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.middleNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.firstNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtContractAmount = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtContractor = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtProject = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.birthDateDateTimePicker = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radDateTimePicker1 = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.dtRevised = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.dtAmmended = new Telerik.WinControls.UI.RadDateTimePicker();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
@@ -50,30 +50,33 @@
             this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
-            this.radDateTimePicker2 = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radDateTimePicker3 = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.dtExpiry = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.dtStart = new Telerik.WinControls.UI.RadDateTimePicker();
             this.panelInfo = new System.Windows.Forms.Panel();
-            this.panelBottom = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.cboRoute = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtComment = new Telerik.WinControls.UI.RadTextBoxControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.cboRoute = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.btnAddDetail = new Telerik.WinControls.UI.RadButton();
             this.cancelButton = new Telerik.WinControls.UI.RadButton();
             this.saveButton = new Telerik.WinControls.UI.RadButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.radGridView = new Telerik.WinControls.UI.RadGridView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.txtDedNo = new Telerik.WinControls.UI.RadTextBoxControl();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstNameTextBoxControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContractAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContractor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             this.radLabel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthDateDateTimePicker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtRevised)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtAmmended)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             this.radLabel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
@@ -86,17 +89,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
             this.radLabel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtExpiry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtStart)).BeginInit();
             this.panelInfo.SuspendLayout();
-            this.panelBottom.SuspendLayout();
-            this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtComment)).BeginInit();
+            this.panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDedNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,29 +124,41 @@
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Survey / Inspection";
             // 
-            // lastNameTextBoxControl
+            // pictureBox1
             // 
-            this.lastNameTextBoxControl.Location = new System.Drawing.Point(134, 172);
-            this.lastNameTextBoxControl.Name = "lastNameTextBoxControl";
-            this.lastNameTextBoxControl.Size = new System.Drawing.Size(225, 20);
-            this.lastNameTextBoxControl.TabIndex = 56;
-            this.lastNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.pictureBox1.BackgroundImage = global::QC.Forms.Properties.Resources.arrow1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 33);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // middleNameTextBoxControl
+            // txtContractAmount
             // 
-            this.middleNameTextBoxControl.Location = new System.Drawing.Point(134, 41);
-            this.middleNameTextBoxControl.Name = "middleNameTextBoxControl";
-            this.middleNameTextBoxControl.Size = new System.Drawing.Size(225, 20);
-            this.middleNameTextBoxControl.TabIndex = 55;
-            this.middleNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.txtContractAmount.Location = new System.Drawing.Point(134, 172);
+            this.txtContractAmount.Name = "txtContractAmount";
+            this.txtContractAmount.Size = new System.Drawing.Size(225, 20);
+            this.txtContractAmount.TabIndex = 56;
+            this.txtContractAmount.ThemeName = "MedicalAppTheme";
             // 
-            // firstNameTextBoxControl
+            // txtContractor
             // 
-            this.firstNameTextBoxControl.Location = new System.Drawing.Point(134, 15);
-            this.firstNameTextBoxControl.Name = "firstNameTextBoxControl";
-            this.firstNameTextBoxControl.Size = new System.Drawing.Size(558, 20);
-            this.firstNameTextBoxControl.TabIndex = 54;
-            this.firstNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.txtContractor.Location = new System.Drawing.Point(134, 41);
+            this.txtContractor.Name = "txtContractor";
+            this.txtContractor.Size = new System.Drawing.Size(225, 20);
+            this.txtContractor.TabIndex = 55;
+            this.txtContractor.ThemeName = "MedicalAppTheme";
+            // 
+            // txtProject
+            // 
+            this.txtProject.Location = new System.Drawing.Point(271, 15);
+            this.txtProject.Name = "txtProject";
+            this.txtProject.Size = new System.Drawing.Size(558, 20);
+            this.txtProject.TabIndex = 54;
+            this.txtProject.ThemeName = "MedicalAppTheme";
             // 
             // radLabel3
             // 
@@ -153,6 +169,15 @@
             this.radLabel3.TabIndex = 53;
             this.radLabel3.Text = "Date of Start";
             this.radLabel3.ThemeName = "MedicalAppTheme";
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.Location = new System.Drawing.Point(3, 19);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(76, 18);
+            this.radLabel4.TabIndex = 59;
+            this.radLabel4.Text = "Date of Expiry";
+            this.radLabel4.ThemeName = "MedicalAppTheme";
             // 
             // radLabel2
             // 
@@ -172,38 +197,29 @@
             this.radLabel1.Text = "Project";
             this.radLabel1.ThemeName = "MedicalAppTheme";
             // 
-            // birthDateDateTimePicker
+            // dtRevised
             // 
-            this.birthDateDateTimePicker.CustomFormat = "dd-MM-yyyy";
-            this.birthDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.birthDateDateTimePicker.Location = new System.Drawing.Point(134, 119);
-            this.birthDateDateTimePicker.Name = "birthDateDateTimePicker";
-            this.birthDateDateTimePicker.Size = new System.Drawing.Size(225, 20);
-            this.birthDateDateTimePicker.TabIndex = 57;
-            this.birthDateDateTimePicker.TabStop = false;
-            this.birthDateDateTimePicker.ThemeName = "MedicalAppTheme";
-            this.birthDateDateTimePicker.Value = new System.DateTime(((long)(0)));
+            this.dtRevised.CustomFormat = "dd-MM-yyyy";
+            this.dtRevised.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtRevised.Location = new System.Drawing.Point(134, 119);
+            this.dtRevised.Name = "dtRevised";
+            this.dtRevised.Size = new System.Drawing.Size(225, 20);
+            this.dtRevised.TabIndex = 57;
+            this.dtRevised.TabStop = false;
+            this.dtRevised.ThemeName = "MedicalAppTheme";
+            this.dtRevised.Value = new System.DateTime(((long)(0)));
             // 
-            // radDateTimePicker1
+            // dtAmmended
             // 
-            this.radDateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.radDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.radDateTimePicker1.Location = new System.Drawing.Point(134, 145);
-            this.radDateTimePicker1.Name = "radDateTimePicker1";
-            this.radDateTimePicker1.Size = new System.Drawing.Size(225, 20);
-            this.radDateTimePicker1.TabIndex = 58;
-            this.radDateTimePicker1.TabStop = false;
-            this.radDateTimePicker1.ThemeName = "MedicalAppTheme";
-            this.radDateTimePicker1.Value = new System.DateTime(((long)(0)));
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.Location = new System.Drawing.Point(3, 19);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(76, 18);
-            this.radLabel4.TabIndex = 59;
-            this.radLabel4.Text = "Date of Expiry";
-            this.radLabel4.ThemeName = "MedicalAppTheme";
+            this.dtAmmended.CustomFormat = "dd-MM-yyyy";
+            this.dtAmmended.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtAmmended.Location = new System.Drawing.Point(134, 145);
+            this.dtAmmended.Name = "dtAmmended";
+            this.dtAmmended.Size = new System.Drawing.Size(225, 20);
+            this.dtAmmended.TabIndex = 58;
+            this.dtAmmended.TabStop = false;
+            this.dtAmmended.ThemeName = "MedicalAppTheme";
+            this.dtAmmended.Value = new System.DateTime(((long)(0)));
             // 
             // radLabel5
             // 
@@ -281,74 +297,73 @@
             this.radLabel12.Text = "Date of Expiry";
             this.radLabel12.ThemeName = "MedicalAppTheme";
             // 
-            // radDateTimePicker2
+            // dtExpiry
             // 
-            this.radDateTimePicker2.CustomFormat = "dd-MM-yyyy";
-            this.radDateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.radDateTimePicker2.Location = new System.Drawing.Point(134, 93);
-            this.radDateTimePicker2.Name = "radDateTimePicker2";
-            this.radDateTimePicker2.Size = new System.Drawing.Size(225, 20);
-            this.radDateTimePicker2.TabIndex = 60;
-            this.radDateTimePicker2.TabStop = false;
-            this.radDateTimePicker2.ThemeName = "MedicalAppTheme";
-            this.radDateTimePicker2.Value = new System.DateTime(((long)(0)));
+            this.dtExpiry.CustomFormat = "dd-MM-yyyy";
+            this.dtExpiry.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtExpiry.Location = new System.Drawing.Point(134, 93);
+            this.dtExpiry.Name = "dtExpiry";
+            this.dtExpiry.Size = new System.Drawing.Size(225, 20);
+            this.dtExpiry.TabIndex = 60;
+            this.dtExpiry.TabStop = false;
+            this.dtExpiry.ThemeName = "MedicalAppTheme";
+            this.dtExpiry.Value = new System.DateTime(((long)(0)));
             // 
-            // radDateTimePicker3
+            // dtStart
             // 
-            this.radDateTimePicker3.CustomFormat = "dd-MM-yyyy";
-            this.radDateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.radDateTimePicker3.Location = new System.Drawing.Point(134, 67);
-            this.radDateTimePicker3.Name = "radDateTimePicker3";
-            this.radDateTimePicker3.Size = new System.Drawing.Size(225, 20);
-            this.radDateTimePicker3.TabIndex = 59;
-            this.radDateTimePicker3.TabStop = false;
-            this.radDateTimePicker3.ThemeName = "MedicalAppTheme";
-            this.radDateTimePicker3.Value = new System.DateTime(((long)(0)));
+            this.dtStart.CustomFormat = "dd-MM-yyyy";
+            this.dtStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtStart.Location = new System.Drawing.Point(134, 67);
+            this.dtStart.Name = "dtStart";
+            this.dtStart.Size = new System.Drawing.Size(225, 20);
+            this.dtStart.TabIndex = 59;
+            this.dtStart.TabStop = false;
+            this.dtStart.ThemeName = "MedicalAppTheme";
+            this.dtStart.Value = new System.DateTime(((long)(0)));
             // 
             // panelInfo
             // 
+            this.panelInfo.Controls.Add(this.txtDedNo);
             this.panelInfo.Controls.Add(this.txtComment);
             this.panelInfo.Controls.Add(this.label1);
             this.panelInfo.Controls.Add(this.cboRoute);
             this.panelInfo.Controls.Add(this.label4);
             this.panelInfo.Controls.Add(this.radLabel1);
-            this.panelInfo.Controls.Add(this.radDateTimePicker2);
+            this.panelInfo.Controls.Add(this.dtExpiry);
             this.panelInfo.Controls.Add(this.radLabel2);
             this.panelInfo.Controls.Add(this.radLabel11);
             this.panelInfo.Controls.Add(this.radLabel3);
-            this.panelInfo.Controls.Add(this.radDateTimePicker3);
-            this.panelInfo.Controls.Add(this.firstNameTextBoxControl);
+            this.panelInfo.Controls.Add(this.dtStart);
+            this.panelInfo.Controls.Add(this.txtProject);
             this.panelInfo.Controls.Add(this.radLabel7);
-            this.panelInfo.Controls.Add(this.middleNameTextBoxControl);
+            this.panelInfo.Controls.Add(this.txtContractor);
             this.panelInfo.Controls.Add(this.radLabel9);
-            this.panelInfo.Controls.Add(this.lastNameTextBoxControl);
+            this.panelInfo.Controls.Add(this.txtContractAmount);
             this.panelInfo.Controls.Add(this.radLabel5);
-            this.panelInfo.Controls.Add(this.birthDateDateTimePicker);
-            this.panelInfo.Controls.Add(this.radDateTimePicker1);
+            this.panelInfo.Controls.Add(this.dtRevised);
+            this.panelInfo.Controls.Add(this.dtAmmended);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo.Location = new System.Drawing.Point(0, 46);
             this.panelInfo.Name = "panelInfo";
             this.panelInfo.Size = new System.Drawing.Size(879, 208);
             this.panelInfo.TabIndex = 63;
             // 
-            // panelBottom
+            // txtComment
             // 
-            this.panelBottom.Controls.Add(this.cancelButton);
-            this.panelBottom.Controls.Add(this.saveButton);
-            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 546);
-            this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(879, 53);
-            this.panelBottom.TabIndex = 64;
+            this.txtComment.Location = new System.Drawing.Point(565, 114);
+            this.txtComment.Name = "txtComment";
+            this.txtComment.Size = new System.Drawing.Size(287, 39);
+            this.txtComment.TabIndex = 104;
+            this.txtComment.ThemeName = "MedicalAppTheme";
             // 
-            // panelMain
+            // label1
             // 
-            this.panelMain.Controls.Add(this.radGridView);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 254);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(879, 292);
-            this.panelMain.TabIndex = 65;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(492, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 103;
+            this.label1.Text = "Comments :";
             // 
             // cboRoute
             // 
@@ -367,22 +382,27 @@
             this.label4.TabIndex = 93;
             this.label4.Text = "Route To :";
             // 
-            // txtComment
+            // panelBottom
             // 
-            this.txtComment.Location = new System.Drawing.Point(565, 114);
-            this.txtComment.Name = "txtComment";
-            this.txtComment.Size = new System.Drawing.Size(287, 39);
-            this.txtComment.TabIndex = 104;
-            this.txtComment.ThemeName = "MedicalAppTheme";
+            this.panelBottom.Controls.Add(this.btnAddDetail);
+            this.panelBottom.Controls.Add(this.cancelButton);
+            this.panelBottom.Controls.Add(this.saveButton);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 546);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(879, 53);
+            this.panelBottom.TabIndex = 64;
             // 
-            // label1
+            // btnAddDetail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(492, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 103;
-            this.label1.Text = "Comments :";
+            this.btnAddDetail.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.btnAddDetail.Location = new System.Drawing.Point(661, 6);
+            this.btnAddDetail.Name = "btnAddDetail";
+            this.btnAddDetail.Size = new System.Drawing.Size(91, 26);
+            this.btnAddDetail.TabIndex = 66;
+            this.btnAddDetail.Text = "Add Detail";
+            this.btnAddDetail.ThemeName = "MedicalAppTheme";
+            this.btnAddDetail.Click += new System.EventHandler(this.btnAddDetail_Click);
             // 
             // cancelButton
             // 
@@ -405,17 +425,14 @@
             this.saveButton.ThemeName = "MedicalAppTheme";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // pictureBox1
+            // panelMain
             // 
-            this.pictureBox1.BackgroundImage = global::QC.Forms.Properties.Resources.arrow1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 33);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panelMain.Controls.Add(this.radGridView);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 254);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(879, 292);
+            this.panelMain.TabIndex = 65;
             // 
             // radGridView
             // 
@@ -426,21 +443,26 @@
             // 
             this.radGridView.MasterTemplate.AllowAddNewRow = false;
             this.radGridView.MasterTemplate.AllowColumnChooser = false;
-            gridViewTextBoxColumn1.HeaderText = "Description";
-            gridViewTextBoxColumn1.MinWidth = 400;
-            gridViewTextBoxColumn1.Name = "column1";
-            gridViewTextBoxColumn1.Width = 400;
-            gridViewTextBoxColumn2.HeaderText = "Photo";
-            gridViewTextBoxColumn2.MinWidth = 400;
-            gridViewTextBoxColumn2.Name = "column2";
-            gridViewTextBoxColumn2.Width = 400;
-            this.radGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2});
+            this.radGridView.MasterTemplate.AllowEditRow = false;
             this.radGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGridView.Name = "radGridView";
+            this.radGridView.ShowGroupPanel = false;
             this.radGridView.Size = new System.Drawing.Size(879, 292);
             this.radGridView.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // txtDedNo
+            // 
+            this.txtDedNo.Location = new System.Drawing.Point(134, 15);
+            this.txtDedNo.Name = "txtDedNo";
+            this.txtDedNo.Size = new System.Drawing.Size(131, 20);
+            this.txtDedNo.TabIndex = 105;
+            this.txtDedNo.ThemeName = "MedicalAppTheme";
             // 
             // Inspection
             // 
@@ -460,17 +482,18 @@
             this.ThemeName = "ControlDefault";
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstNameTextBoxControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContractAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContractor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             this.radLabel3.ResumeLayout(false);
             this.radLabel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthDateDateTimePicker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtRevised)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtAmmended)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             this.radLabel5.ResumeLayout(false);
             this.radLabel5.PerformLayout();
@@ -487,18 +510,19 @@
             this.radLabel11.ResumeLayout(false);
             this.radLabel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtExpiry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtStart)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            this.panelBottom.ResumeLayout(false);
-            this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtComment)).EndInit();
+            this.panelBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDedNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -508,14 +532,14 @@
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Telerik.WinControls.UI.RadTextBoxControl lastNameTextBoxControl;
-        private Telerik.WinControls.UI.RadTextBoxControl middleNameTextBoxControl;
-        private Telerik.WinControls.UI.RadTextBoxControl firstNameTextBoxControl;
+        private Telerik.WinControls.UI.RadTextBoxControl txtContractAmount;
+        private Telerik.WinControls.UI.RadTextBoxControl txtContractor;
+        private Telerik.WinControls.UI.RadTextBoxControl txtProject;
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadLabel radLabel1;
-        private Telerik.WinControls.UI.RadDateTimePicker birthDateDateTimePicker;
-        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker1;
+        private Telerik.WinControls.UI.RadDateTimePicker dtRevised;
+        private Telerik.WinControls.UI.RadDateTimePicker dtAmmended;
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadLabel radLabel6;
@@ -525,8 +549,8 @@
         private Telerik.WinControls.UI.RadLabel radLabel10;
         private Telerik.WinControls.UI.RadLabel radLabel11;
         private Telerik.WinControls.UI.RadLabel radLabel12;
-        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker2;
-        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker3;
+        private Telerik.WinControls.UI.RadDateTimePicker dtExpiry;
+        private Telerik.WinControls.UI.RadDateTimePicker dtStart;
         private System.Windows.Forms.Panel panelInfo;
         private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.Panel panelMain;
@@ -537,5 +561,8 @@
         private Telerik.WinControls.UI.RadButton cancelButton;
         private Telerik.WinControls.UI.RadButton saveButton;
         private Telerik.WinControls.UI.RadGridView radGridView;
+        private System.Windows.Forms.ImageList imageList1;
+        private Telerik.WinControls.UI.RadButton btnAddDetail;
+        private Telerik.WinControls.UI.RadTextBoxControl txtDedNo;
     }
 }

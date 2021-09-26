@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using QC.Forms.Lib;
+using QC.Lib;
 
 namespace QC.Forms
 {
@@ -12,7 +14,7 @@ namespace QC.Forms
         protected static string MainTitle = "";
         protected static string ValidationMessage = "";
 
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         static bool allowaddnew = true;
 
@@ -28,20 +30,7 @@ namespace QC.Forms
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 
-        public event UpdateEventHandler UpdateHandler;
-
-
-        public void Record_Updated(object sender, EventArgs e)
-        {
-            try
-            {
-                UpdateHandler(sender, e);
-            }
-            catch
-            {
-                return;
-            }
-        }
+        public event UpdateEventHandler EntryUpdateHandler;
 
         protected virtual bool ValidateEntry()
         {
@@ -60,7 +49,7 @@ namespace QC.Forms
                     cancelButton.Visible = false;
                     try
                     {
-                        UpdateHandler(this, e);
+                        EntryUpdateHandler(this, e);
                     }
                     catch { }
 

@@ -23,9 +23,9 @@ namespace QC.Repository
             return dataacess.GetDataRow("usp_LaborCostSave", args);
         }
 
-        public DataRow GetLaborCostbyId(string id)
+        public DataRow GetLaborCostbyId(params object[] args)
         {
-            return dataacess.GetDataRow("usp_LaborCostGetbyId", id);
+            return dataacess.GetDataRow("usp_LaborCostGetbyId", args);
         }
     }
 }

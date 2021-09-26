@@ -29,7 +29,7 @@ namespace QC.Forms.List
             if (selectedrow != null)
             {
                 Entry.Inspection oEntry = new Entry.Inspection(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.InspectionUpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

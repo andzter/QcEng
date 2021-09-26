@@ -222,6 +222,22 @@ namespace QC.Lib
             }
         }
 
+        public static void SetDateVal(RadDateTimePicker dtp, DateTime? date)
+        {
+            try
+            {
+                if (date != null)
+                {
+                    dtp.Value = (DateTime)date;
+                }
+
+            }
+            catch
+            {
+                return;
+            }
+        }
+
         public static void SetDateVal(TextBox dtp, string sdate)
         {
             try
@@ -335,6 +351,14 @@ namespace QC.Lib
             if (dtp.Checked)
                 return dtp.Value;
             return null;
+        }
+
+
+        public static DateTime? DateVal(DateTime dt)
+        {
+            if (dt.ToString().StartsWith(@"1/1/0001"))
+                return null;
+            return dt;
         }
 
         public static string QueryNoOrderBy(string query)

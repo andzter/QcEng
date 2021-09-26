@@ -10,6 +10,22 @@ namespace QC.Lib
 {
     public static class Settings
     {
+
+        public static string Theme
+        {
+            get
+            {
+                return GetSetting(Constant.THEME_NAME);
+                //Properties.Settings.Default.Theme;
+            }
+            set
+            {
+                SetSetting(Constant.THEME_NAME, value);
+                //Properties.Settings.Default.Theme = value;
+                //Properties.Settings.Default.Save();
+            }
+        }
+
         public static string GetSetting(string key)
         {
 

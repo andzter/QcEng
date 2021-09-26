@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QC.Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace QC.Forms
     public partial class BaseRadFormBlank : Telerik.WinControls.UI.RadForm
     {
 
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Settings.GetSetting("userid");
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 

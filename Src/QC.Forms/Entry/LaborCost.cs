@@ -7,12 +7,13 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
+using QC.Lib;
 
 namespace QC.Forms.Entry
 {
     public partial class LaborCost : Telerik.WinControls.UI.RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 
@@ -49,11 +50,7 @@ namespace QC.Forms.Entry
 
 
         }
-
-        private void lblTtile_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void CloseWindow()
         {

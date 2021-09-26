@@ -30,7 +30,7 @@ namespace QC.Forms.List
             if (selectedrow != null)
             {
                 Entry.DEDFolders oEntry = new Entry.DEDFolders();
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.UpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

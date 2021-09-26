@@ -11,10 +11,16 @@ namespace QC.Repository
     {
         Lib.DataAccess dataacess = new Lib.DataAccess();
 
+        public DataTable GetUsers(params object[] args)
+        {
+            return dataacess.GetDataTable("usp_UserList", args);
+        }
+
         public DataTable GetUsers()
         {
             return dataacess.GetDataTable("select * from users");
         }
+
 
         public DataTable CommunicationProject(string userid)
         {

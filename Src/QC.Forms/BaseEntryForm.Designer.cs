@@ -97,6 +97,7 @@ namespace QC.Forms
             this.ClientSize = new System.Drawing.Size(596, 579);
             this.Controls.Add(this.grpButton);
             this.Name = "BaseEntryForm";
+            this.Text = ",";
             this.grpButton.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();

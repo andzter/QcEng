@@ -28,6 +28,16 @@ namespace QC.Repository
             return dataacess.GetDataRow("usp_ProjectBomSaveNew", args);
         }
 
+        public DataRow SaveDetails(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_ProjectBomSave", args);
+        }
+
+        public DataRow DeleteDetails(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_ProjectBomDelete", args);
+        }
+
         public DataRow GetProjectBombyId(string id)
         {
             return dataacess.GetDataRow("usp_ProjectBomGetbyId", id);

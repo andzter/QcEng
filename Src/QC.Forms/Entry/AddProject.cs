@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QC.Lib;
 
 namespace QC.Forms.Entry
 {
@@ -31,14 +32,14 @@ namespace QC.Forms.Entry
 
             var dtTeams = new Repository.Lookup().GetTeams();
 
-            Lib.Common.FillControl(cboRoute, dtTeams);
+            Common.FillControl(cboRoute, dtTeams);
 
         }
 
 
         protected override void SaveEntry()
         {
-            new Repository.Project().SaveNewProject(_commid, txtProject.Text, txtBarangay.Text, txtDistrict.Text, txtComment.Text, Lib.Common.ComboVal(cboRoute), _userid);
+            new Repository.Project().SaveNewProject(_commid, txtProject.Text, txtBarangay.Text, txtDistrict.Text, txtComment.Text, Common.ComboVal(cboRoute), _userid);
 
         }
     }

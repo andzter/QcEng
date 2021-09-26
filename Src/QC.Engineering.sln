@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Forms", "QC.Forms\QC.For
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Repository", "QC.Repository\QC.Repository.csproj", "{B9CC90D3-8739-4223-8886-BFDDB9CCF505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Forms.Lib", "QC.Forms.Lib\QC.Forms.Lib.csproj", "{94C8C6B7-8688-405D-8176-F0D0997A5285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,13 +35,17 @@ Global
 		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9CC90D3-8739-4223-8886-BFDDB9CCF505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Security.Cryptography.5.0.505.0\lib\NET35
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 		SolutionGuid = {1EC96667-1163-4136-9FE6-1D9638F965E1}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Security.Cryptography.5.0.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

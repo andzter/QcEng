@@ -65,6 +65,11 @@ namespace QC.Repository
             dataacess.ExecuteNonQuery("usp_ProjectSaveRoute", args);
         }
 
+        public void SaveHeader(params object[] args)
+        {
+            dataacess.ExecSQLScalarSP("usp_ProjectSaveHeader", args);
+        }
+
         public DataTable GetDataTable(string sql)
         {
             return dataacess.GetDataTable(sql);

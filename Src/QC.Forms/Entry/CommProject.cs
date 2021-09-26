@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QC.Lib;
 
 namespace QC.Forms.Entry
 {
@@ -50,7 +51,7 @@ namespace QC.Forms.Entry
 
         protected override void SaveEntry()
         { 
-            new Repository.Communications().Save(_id, txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text, Lib.Common.ComboVal(cboRoute),   _userid);
+            new Repository.Communications().Save(_id, txtproject.Text, radDocdate.Value, txtdocsource.Text, txtremarks.Text, Common.ComboVal(cboRoute),   _userid);
         }
     }
 }

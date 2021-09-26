@@ -7,12 +7,13 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
+using QC.Lib;
 
 namespace QC.Forms.Entry
 {
     public partial class MaterialCost : Telerik.WinControls.UI.RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 
@@ -47,12 +48,7 @@ namespace QC.Forms.Entry
             QC.Lib.Common.FillControl(cboUnit, dtunits);
 
         }
-
-        private void lblTtile_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void savebutton_Click(object sender, EventArgs e)
         {
             if (txtprice1.Text.Trim().Length == 0) txtprice1.Text = "0";

@@ -30,7 +30,7 @@ namespace QC.Forms.List
             {
 
                 Entry.CommProject oEntry = new Entry.CommProject(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.EntryUpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

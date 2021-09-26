@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QC.Forms.Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -110,7 +111,7 @@ namespace QC.Forms.UserControls
         private void addButton_Click(object sender, EventArgs e)
         {
             Entry.AddProject oEntry = new Entry.AddProject(_commid);
-            oEntry.UpdateHandler += Record_Updated;
+            oEntry.EntryUpdateHandler += Record_Updated;
             oEntry.Show();
         }
 

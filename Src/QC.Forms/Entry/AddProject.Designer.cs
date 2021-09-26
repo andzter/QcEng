@@ -30,31 +30,31 @@ namespace QC.Forms.Entry
         private void InitializeComponent()
         {
             this.panelInfo = new System.Windows.Forms.Panel();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.txtBarangay = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.cboRoute = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtComment = new Telerik.WinControls.UI.RadTextBoxControl();
             this.label1 = new System.Windows.Forms.Label();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
             this.txtProject = new Telerik.WinControls.UI.RadTextBoxControl();
             this.txtDistrict = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.cboRoute = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.txtBarangay = new Telerik.WinControls.UI.RadTextBoxControl();
             this.panelInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBarangay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
             this.radLabel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDistrict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBarangay)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -76,9 +76,43 @@ namespace QC.Forms.Entry
             this.panelInfo.Size = new System.Drawing.Size(922, 194);
             this.panelInfo.TabIndex = 72;
             // 
+            // radLabel4
+            // 
+            this.radLabel4.Location = new System.Drawing.Point(12, 69);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(52, 18);
+            this.radLabel4.TabIndex = 106;
+            this.radLabel4.Text = "Barangay";
+            // 
+            // txtBarangay
+            // 
+            this.txtBarangay.Location = new System.Drawing.Point(135, 67);
+            this.txtBarangay.Name = "txtBarangay";
+            this.txtBarangay.Size = new System.Drawing.Size(262, 20);
+            this.txtBarangay.TabIndex = 107;
+            this.txtBarangay.ThemeName = "MedicalAppTheme";
+            // 
+            // cboRoute
+            // 
+            this.cboRoute.FormattingEnabled = true;
+            this.cboRoute.Location = new System.Drawing.Point(134, 93);
+            this.cboRoute.Name = "cboRoute";
+            this.cboRoute.Size = new System.Drawing.Size(357, 21);
+            this.cboRoute.TabIndex = 105;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 104;
+            this.label4.Text = "Route To :";
+            // 
             // txtComment
             // 
             this.txtComment.Location = new System.Drawing.Point(134, 120);
+            this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.Size = new System.Drawing.Size(738, 49);
             this.txtComment.TabIndex = 103;
@@ -119,6 +153,14 @@ namespace QC.Forms.Entry
             this.radLabel11.TabIndex = 62;
             this.radLabel11.Text = " ";
             // 
+            // radLabel3
+            // 
+            this.radLabel3.Location = new System.Drawing.Point(6, 3);
+            this.radLabel3.Name = "radLabel3";
+            this.radLabel3.Size = new System.Drawing.Size(52, 18);
+            this.radLabel3.TabIndex = 106;
+            this.radLabel3.Text = "Barangay";
+            // 
             // radLabel12
             // 
             this.radLabel12.Location = new System.Drawing.Point(3, 19);
@@ -144,47 +186,6 @@ namespace QC.Forms.Entry
             this.txtDistrict.TabIndex = 55;
             this.txtDistrict.ThemeName = "MedicalAppTheme";
             // 
-            // cboRoute
-            // 
-            this.cboRoute.FormattingEnabled = true;
-            this.cboRoute.Location = new System.Drawing.Point(134, 93);
-            this.cboRoute.Name = "cboRoute";
-            this.cboRoute.Size = new System.Drawing.Size(357, 21);
-            this.cboRoute.TabIndex = 105;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 104;
-            this.label4.Text = "Route To :";
-            // 
-            // radLabel3
-            // 
-            this.radLabel3.Location = new System.Drawing.Point(6, 3);
-            this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(52, 18);
-            this.radLabel3.TabIndex = 106;
-            this.radLabel3.Text = "Barangay";
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.Location = new System.Drawing.Point(12, 69);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(52, 18);
-            this.radLabel4.TabIndex = 106;
-            this.radLabel4.Text = "Barangay";
-            // 
-            // txtBarangay
-            // 
-            this.txtBarangay.Location = new System.Drawing.Point(135, 67);
-            this.txtBarangay.Name = "txtBarangay";
-            this.txtBarangay.Size = new System.Drawing.Size(262, 20);
-            this.txtBarangay.TabIndex = 107;
-            this.txtBarangay.ThemeName = "MedicalAppTheme";
-            // 
             // AddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,18 +197,18 @@ namespace QC.Forms.Entry
             this.Controls.SetChildIndex(this.panelInfo, 0);
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBarangay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
             this.radLabel11.ResumeLayout(false);
             this.radLabel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDistrict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBarangay)).EndInit();
             this.ResumeLayout(false);
 
         }

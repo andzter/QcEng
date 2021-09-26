@@ -1,18 +1,13 @@
 ﻿using QC.Forms.UserControls;
+using QC.Lib;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using Telerik.WinControls;
 
 namespace QC.Forms.Entry
 {
     public partial class DEDFolders : Telerik.WinControls.UI.RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 

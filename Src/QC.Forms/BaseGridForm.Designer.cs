@@ -29,10 +29,11 @@ namespace QC.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.addButton = new Telerik.WinControls.UI.RadButton();
             this.exportButton = new Telerik.WinControls.UI.RadButton();
@@ -42,8 +43,11 @@ namespace QC.Forms
             this.radGrid = new Telerik.WinControls.UI.RadGridView();
             this.grpFooter = new System.Windows.Forms.GroupBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtLocation = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.btnSearch = new Telerik.WinControls.UI.RadButton();
             this.pnlTop.SuspendLayout();
+            this.pnlSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exportButton)).BeginInit();
@@ -53,7 +57,8 @@ namespace QC.Forms
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).BeginInit();
             this.grpFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -70,10 +75,12 @@ namespace QC.Forms
             // 
             // pnlSearch
             // 
+            this.pnlSearch.Controls.Add(this.btnSearch);
+            this.pnlSearch.Controls.Add(this.txtLocation);
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSearch.Location = new System.Drawing.Point(625, 0);
+            this.pnlSearch.Location = new System.Drawing.Point(582, 0);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(374, 46);
+            this.pnlSearch.Size = new System.Drawing.Size(417, 46);
             this.pnlSearch.TabIndex = 3;
             // 
             // lblTitle
@@ -85,6 +92,18 @@ namespace QC.Forms
             this.lblTitle.Size = new System.Drawing.Size(66, 31);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Title";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QC.Forms.Properties.Resources.arrow1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 33);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -106,7 +125,7 @@ namespace QC.Forms
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(999, 39);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(999, 43);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // addButton
@@ -161,13 +180,13 @@ namespace QC.Forms
             // radGrid
             // 
             this.radGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radGrid.Location = new System.Drawing.Point(0, 85);
+            this.radGrid.Location = new System.Drawing.Point(0, 89);
             // 
             // 
             // 
-            this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.radGrid.Name = "radGrid";
-            this.radGrid.Size = new System.Drawing.Size(999, 336);
+            this.radGrid.Size = new System.Drawing.Size(999, 332);
             this.radGrid.TabIndex = 3;
             this.radGrid.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.radGrid_CellDoubleClick);
             // 
@@ -191,17 +210,22 @@ namespace QC.Forms
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "No record found!";
             // 
-            // pictureBox1
+            // txtLocation
             // 
-            this.pictureBox1.BackgroundImage = global::QC.Forms.Properties.Resources.arrow1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 33);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.txtLocation.Location = new System.Drawing.Point(3, 12);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(317, 24);
+            this.txtLocation.TabIndex = 143;
+            this.txtLocation.ThemeName = "MedicalAppTheme";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSearch.Location = new System.Drawing.Point(321, 12);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(93, 24);
+            this.btnSearch.TabIndex = 144;
+            this.btnSearch.Text = "Search";
             // 
             // BaseGridForm
             // 
@@ -216,6 +240,8 @@ namespace QC.Forms
             this.Text = "BaseGridForm";
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
+            this.pnlSearch.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.addButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exportButton)).EndInit();
@@ -226,7 +252,8 @@ namespace QC.Forms
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).EndInit();
             this.grpFooter.ResumeLayout(false);
             this.grpFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,5 +273,7 @@ namespace QC.Forms
         private System.Windows.Forms.GroupBox grpFooter;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Panel pnlSearch;
+        private Telerik.WinControls.UI.RadTextBoxControl txtLocation;
+        private Telerik.WinControls.UI.RadButton btnSearch;
     }
 }

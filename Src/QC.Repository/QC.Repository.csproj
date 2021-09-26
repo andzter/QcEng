@@ -59,6 +59,7 @@
     <Compile Include="Project.cs" />
     <Compile Include="ProjectBom.cs" />
     <Compile Include="ProjectBom2.cs" />
+    <Compile Include="ProjectSchedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users.cs" />
   </ItemGroup>

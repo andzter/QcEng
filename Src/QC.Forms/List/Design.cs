@@ -29,8 +29,8 @@ namespace QC.Forms.List
         {
             if (selectedrow != null)
             {
-                Entry.DesignEstimate oEntry = new Entry.DesignEstimate(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                Entry.DesignProject oEntry = new Entry.DesignProject(selectedrow.Cells[0].Value.ToString());
+                oEntry.UpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

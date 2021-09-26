@@ -19,9 +19,6 @@ namespace QC.Forms.List
             InitializeComponent();
         }
 
-
-        
-
         protected override DataTable GetData()
         {
             return new Repository.Communications().GetList(_userId);
@@ -30,7 +27,7 @@ namespace QC.Forms.List
         protected override void NewRecord()
         {
             Entry.NewProject oEntry = new Entry.NewProject();
-            oEntry.UpdateHandler += Record_Updated;
+            oEntry.EntryUpdateHandler += GridRecord_Updated;
             oEntry.Show();
         }
 
@@ -40,7 +37,7 @@ namespace QC.Forms.List
             {
 
                 Entry.CommProject oEntry = new Entry.CommProject(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.EntryUpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

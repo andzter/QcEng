@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Text;
-using System.Windows.Forms;
-using Telerik.WinControls;
+using QC.Lib;
+using Telerik.WinControls.UI;
 
 namespace QC.Forms.Entry
 {
-    public partial class EquipmentCost : Telerik.WinControls.UI.RadForm
+    public partial class EquipmentCost : RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 
@@ -41,11 +35,7 @@ namespace QC.Forms.Entry
 
         }
 
-        private void lblTtile_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void CloseWindow()
         {
             Dispose();

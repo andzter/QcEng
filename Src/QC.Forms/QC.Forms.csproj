@@ -63,16 +63,16 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\Telerik.WinControls.dll</HintPath>
+      <HintPath>..\lib\RCWF\2020.2.512.40\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.WinControls.GridView, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\Telerik.WinControls.UI.dll</HintPath>
+      <HintPath>..\lib\RCWF\2020.2.512.40\Telerik.WinControls.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="TelerikCommon, Version=2020.2.512.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\QC.Engineering\lib\RCWF\2020.2.512.40\TelerikCommon.dll</HintPath>
+      <HintPath>..\lib\RCWF\2020.2.512.40\TelerikCommon.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
@@ -109,6 +109,12 @@
       <DependentUpon>BaseRadFormBlank.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Entry\AddBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\AddBOM.Designer.cs">
+      <DependentUpon>AddBOM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entry\AddProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,12 @@
     <Compile Include="Entry\Inspection.Designer.cs">
       <DependentUpon>Inspection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entry\InspectionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry\InspectionDetail.Designer.cs">
+      <DependentUpon>InspectionDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entry\LaborCost.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,7 +229,6 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUtils.cs" />
     <Compile Include="List\Communication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +340,12 @@
     <Compile Include="UserControls\AutoCadFiles.Designer.cs">
       <DependentUpon>AutoCadFiles.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\BOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -353,11 +370,17 @@
     <Compile Include="UserControls\Estimates.Designer.cs">
       <DependentUpon>Estimates.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Header.cs">
+    <Compile Include="UserControls\FileCAD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Header.Designer.cs">
-      <DependentUpon>Header.cs</DependentUpon>
+    <Compile Include="UserControls\FileCAD.Designer.cs">
+      <DependentUpon>FileCAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FilePDF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FilePDF.Designer.cs">
+      <DependentUpon>FilePDF.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Inspection.cs">
       <SubType>UserControl</SubType>
@@ -377,6 +400,30 @@
     <Compile Include="UserControls\ProjectCertificationcs.Designer.cs">
       <DependentUpon>ProjectCertificationcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ProjectHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProjectHeader.Designer.cs">
+      <DependentUpon>ProjectHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProjectSched.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProjectSched.Designer.cs">
+      <DependentUpon>ProjectSched.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SOW.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SOW.Designer.cs">
+      <DependentUpon>SOW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TechSpecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TechSpecs.Designer.cs">
+      <DependentUpon>TechSpecs.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin\ChangePassword.resx">
@@ -390,6 +437,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaseRadFormBlank.resx">
       <DependentUpon>BaseRadFormBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\AddBOM.resx">
+      <DependentUpon>AddBOM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Entry\AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
@@ -420,6 +470,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entry\Inspection.resx">
       <DependentUpon>Inspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\InspectionDetail.resx">
+      <DependentUpon>InspectionDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Entry\LaborCost.resx">
       <DependentUpon>LaborCost.cs</DependentUpon>
@@ -463,6 +516,9 @@
     <EmbeddedResource Include="UserControls\AddNewProject.resx">
       <DependentUpon>AddNewProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\BOM.resx">
       <DependentUpon>BOM.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,14 +528,20 @@
     <EmbeddedResource Include="UserControls\EquipmentList.resx">
       <DependentUpon>EquipmentList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Header.resx">
-      <DependentUpon>Header.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\FileCAD.resx">
+      <DependentUpon>FileCAD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Inspection.resx">
       <DependentUpon>Inspection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PersonnelList.resx">
       <DependentUpon>PersonnelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProjectHeader.resx">
+      <DependentUpon>ProjectHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProjectSched.resx">
+      <DependentUpon>ProjectSched.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -506,6 +568,10 @@
     <None Include="Resources\arrow1.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\QC.Forms.Lib\QC.Forms.Lib.csproj">
+      <Project>{94c8c6b7-8688-405d-8176-f0d0997a5285}</Project>
+      <Name>QC.Forms.Lib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\QC.Lib\QC.Lib.csproj">
       <Project>{0270f352-ed64-42e7-9efe-f2318116952a}</Project>
       <Name>QC.Lib</Name>

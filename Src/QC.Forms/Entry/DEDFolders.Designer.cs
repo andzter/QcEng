@@ -32,40 +32,39 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInfo = new System.Windows.Forms.Panel();
-            this.radTextBoxControl9 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtTypePavement = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel21 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl5 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtSidewalkWidth = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl6 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtPavementWidth = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl7 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtRdWay = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl8 = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radTextBoxControl4 = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
+            this.txtdateEst = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtScope = new Telerik.WinControls.UI.RadLabel();
             this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl3 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtAppr = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl2 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtDuration = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl1 = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtLen = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
             this.txtProject = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.middleNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.lastNameTextBoxControl = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtLocation = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtLimit = new Telerik.WinControls.UI.RadTextBoxControl();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.radPageView = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
@@ -76,50 +75,49 @@
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTypePavement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).BeginInit();
             this.radLabel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSidewalkWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
             this.radLabel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
             this.radLabel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPavementWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
             this.radLabel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRdWay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
             this.radLabel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
-            this.radLabel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtdateEst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtScope)).BeginInit();
+            this.txtScope.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAppr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
             this.radLabel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             this.radLabel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             this.radLabel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
             this.radLabel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProject)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView)).BeginInit();
             this.radPageView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -159,43 +157,42 @@
             // 
             // panelInfo
             // 
-            this.panelInfo.Controls.Add(this.radTextBoxControl9);
+            this.panelInfo.Controls.Add(this.txtTypePavement);
             this.panelInfo.Controls.Add(this.radLabel21);
-            this.panelInfo.Controls.Add(this.radTextBoxControl5);
+            this.panelInfo.Controls.Add(this.txtSidewalkWidth);
             this.panelInfo.Controls.Add(this.radLabel13);
             this.panelInfo.Controls.Add(this.radLabel15);
-            this.panelInfo.Controls.Add(this.radTextBoxControl6);
+            this.panelInfo.Controls.Add(this.txtPavementWidth);
             this.panelInfo.Controls.Add(this.radLabel17);
-            this.panelInfo.Controls.Add(this.radTextBoxControl7);
+            this.panelInfo.Controls.Add(this.txtRdWay);
             this.panelInfo.Controls.Add(this.radLabel19);
-            this.panelInfo.Controls.Add(this.radTextBoxControl8);
-            this.panelInfo.Controls.Add(this.radTextBoxControl4);
-            this.panelInfo.Controls.Add(this.radLabel9);
-            this.panelInfo.Controls.Add(this.radTextBoxControl3);
+            this.panelInfo.Controls.Add(this.txtdateEst);
+            this.panelInfo.Controls.Add(this.txtScope);
+            this.panelInfo.Controls.Add(this.txtAppr);
             this.panelInfo.Controls.Add(this.radLabel7);
             this.panelInfo.Controls.Add(this.radLabel5);
-            this.panelInfo.Controls.Add(this.radTextBoxControl2);
+            this.panelInfo.Controls.Add(this.txtDuration);
             this.panelInfo.Controls.Add(this.radLabel3);
-            this.panelInfo.Controls.Add(this.radTextBoxControl1);
+            this.panelInfo.Controls.Add(this.txtLen);
             this.panelInfo.Controls.Add(this.radLabel1);
             this.panelInfo.Controls.Add(this.radLabel2);
             this.panelInfo.Controls.Add(this.radLabel11);
             this.panelInfo.Controls.Add(this.txtProject);
-            this.panelInfo.Controls.Add(this.middleNameTextBoxControl);
-            this.panelInfo.Controls.Add(this.lastNameTextBoxControl);
+            this.panelInfo.Controls.Add(this.txtLocation);
+            this.panelInfo.Controls.Add(this.txtLimit);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo.Location = new System.Drawing.Point(0, 46);
             this.panelInfo.Name = "panelInfo";
             this.panelInfo.Size = new System.Drawing.Size(955, 263);
             this.panelInfo.TabIndex = 72;
             // 
-            // radTextBoxControl9
+            // txtTypePavement
             // 
-            this.radTextBoxControl9.Location = new System.Drawing.Point(711, 147);
-            this.radTextBoxControl9.Name = "radTextBoxControl9";
-            this.radTextBoxControl9.Size = new System.Drawing.Size(224, 20);
-            this.radTextBoxControl9.TabIndex = 112;
-            this.radTextBoxControl9.ThemeName = "MedicalAppTheme";
+            this.txtTypePavement.Location = new System.Drawing.Point(711, 147);
+            this.txtTypePavement.Name = "txtTypePavement";
+            this.txtTypePavement.Size = new System.Drawing.Size(224, 20);
+            this.txtTypePavement.TabIndex = 112;
+            this.txtTypePavement.ThemeName = "MedicalAppTheme";
             // 
             // radLabel21
             // 
@@ -215,13 +212,13 @@
             this.radLabel22.Text = "Date of Expiry";
             this.radLabel22.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl5
+            // txtSidewalkWidth
             // 
-            this.radTextBoxControl5.Location = new System.Drawing.Point(711, 121);
-            this.radTextBoxControl5.Name = "radTextBoxControl5";
-            this.radTextBoxControl5.Size = new System.Drawing.Size(224, 20);
-            this.radTextBoxControl5.TabIndex = 110;
-            this.radTextBoxControl5.ThemeName = "MedicalAppTheme";
+            this.txtSidewalkWidth.Location = new System.Drawing.Point(711, 121);
+            this.txtSidewalkWidth.Name = "txtSidewalkWidth";
+            this.txtSidewalkWidth.Size = new System.Drawing.Size(224, 20);
+            this.txtSidewalkWidth.TabIndex = 110;
+            this.txtSidewalkWidth.ThemeName = "MedicalAppTheme";
             // 
             // radLabel13
             // 
@@ -248,7 +245,7 @@
             this.radLabel15.Name = "radLabel15";
             this.radLabel15.Size = new System.Drawing.Size(89, 18);
             this.radLabel15.TabIndex = 108;
-            this.radLabel15.Text = "Pvaement Width";
+            this.radLabel15.Text = "Pavement Width";
             // 
             // radLabel16
             // 
@@ -259,13 +256,13 @@
             this.radLabel16.Text = "Date of Expiry";
             this.radLabel16.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl6
+            // txtPavementWidth
             // 
-            this.radTextBoxControl6.Location = new System.Drawing.Point(711, 95);
-            this.radTextBoxControl6.Name = "radTextBoxControl6";
-            this.radTextBoxControl6.Size = new System.Drawing.Size(224, 20);
-            this.radTextBoxControl6.TabIndex = 107;
-            this.radTextBoxControl6.ThemeName = "MedicalAppTheme";
+            this.txtPavementWidth.Location = new System.Drawing.Point(711, 95);
+            this.txtPavementWidth.Name = "txtPavementWidth";
+            this.txtPavementWidth.Size = new System.Drawing.Size(224, 20);
+            this.txtPavementWidth.TabIndex = 107;
+            this.txtPavementWidth.ThemeName = "MedicalAppTheme";
             // 
             // radLabel17
             // 
@@ -285,13 +282,13 @@
             this.radLabel18.Text = "Date of Expiry";
             this.radLabel18.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl7
+            // txtRdWay
             // 
-            this.radTextBoxControl7.Location = new System.Drawing.Point(711, 69);
-            this.radTextBoxControl7.Name = "radTextBoxControl7";
-            this.radTextBoxControl7.Size = new System.Drawing.Size(224, 20);
-            this.radTextBoxControl7.TabIndex = 105;
-            this.radTextBoxControl7.ThemeName = "MedicalAppTheme";
+            this.txtRdWay.Location = new System.Drawing.Point(711, 69);
+            this.txtRdWay.Name = "txtRdWay";
+            this.txtRdWay.Size = new System.Drawing.Size(224, 20);
+            this.txtRdWay.TabIndex = 105;
+            this.txtRdWay.ThemeName = "MedicalAppTheme";
             // 
             // radLabel19
             // 
@@ -311,30 +308,22 @@
             this.radLabel20.Text = "Date of Expiry";
             this.radLabel20.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl8
+            // txtdateEst
             // 
-            this.radTextBoxControl8.Location = new System.Drawing.Point(711, 43);
-            this.radTextBoxControl8.Name = "radTextBoxControl8";
-            this.radTextBoxControl8.Size = new System.Drawing.Size(224, 20);
-            this.radTextBoxControl8.TabIndex = 103;
-            this.radTextBoxControl8.ThemeName = "MedicalAppTheme";
+            this.txtdateEst.Location = new System.Drawing.Point(711, 43);
+            this.txtdateEst.Name = "txtdateEst";
+            this.txtdateEst.Size = new System.Drawing.Size(224, 20);
+            this.txtdateEst.TabIndex = 103;
+            this.txtdateEst.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl4
+            // txtScope
             // 
-            this.radTextBoxControl4.Location = new System.Drawing.Point(134, 171);
-            this.radTextBoxControl4.Name = "radTextBoxControl4";
-            this.radTextBoxControl4.Size = new System.Drawing.Size(801, 79);
-            this.radTextBoxControl4.TabIndex = 102;
-            this.radTextBoxControl4.ThemeName = "MedicalAppTheme";
-            // 
-            // radLabel9
-            // 
-            this.radLabel9.Controls.Add(this.radLabel10);
-            this.radLabel9.Location = new System.Drawing.Point(12, 169);
-            this.radLabel9.Name = "radLabel9";
-            this.radLabel9.Size = new System.Drawing.Size(84, 18);
-            this.radLabel9.TabIndex = 101;
-            this.radLabel9.Text = "Scoper of Work";
+            this.txtScope.Controls.Add(this.radLabel10);
+            this.txtScope.Location = new System.Drawing.Point(12, 169);
+            this.txtScope.Name = "txtScope";
+            this.txtScope.Size = new System.Drawing.Size(84, 18);
+            this.txtScope.TabIndex = 101;
+            this.txtScope.Text = "Scoper of Work";
             // 
             // radLabel10
             // 
@@ -345,13 +334,13 @@
             this.radLabel10.Text = "Date of Expiry";
             this.radLabel10.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl3
+            // txtAppr
             // 
-            this.radTextBoxControl3.Location = new System.Drawing.Point(134, 145);
-            this.radTextBoxControl3.Name = "radTextBoxControl3";
-            this.radTextBoxControl3.Size = new System.Drawing.Size(356, 20);
-            this.radTextBoxControl3.TabIndex = 100;
-            this.radTextBoxControl3.ThemeName = "MedicalAppTheme";
+            this.txtAppr.Location = new System.Drawing.Point(134, 145);
+            this.txtAppr.Name = "txtAppr";
+            this.txtAppr.Size = new System.Drawing.Size(356, 20);
+            this.txtAppr.TabIndex = 100;
+            this.txtAppr.ThemeName = "MedicalAppTheme";
             // 
             // radLabel7
             // 
@@ -389,13 +378,13 @@
             this.radLabel6.Text = "Date of Expiry";
             this.radLabel6.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl2
+            // txtDuration
             // 
-            this.radTextBoxControl2.Location = new System.Drawing.Point(134, 119);
-            this.radTextBoxControl2.Name = "radTextBoxControl2";
-            this.radTextBoxControl2.Size = new System.Drawing.Size(356, 20);
-            this.radTextBoxControl2.TabIndex = 97;
-            this.radTextBoxControl2.ThemeName = "MedicalAppTheme";
+            this.txtDuration.Location = new System.Drawing.Point(134, 119);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(356, 20);
+            this.txtDuration.TabIndex = 97;
+            this.txtDuration.ThemeName = "MedicalAppTheme";
             // 
             // radLabel3
             // 
@@ -415,13 +404,13 @@
             this.radLabel4.Text = "Date of Expiry";
             this.radLabel4.ThemeName = "MedicalAppTheme";
             // 
-            // radTextBoxControl1
+            // txtLen
             // 
-            this.radTextBoxControl1.Location = new System.Drawing.Point(134, 93);
-            this.radTextBoxControl1.Name = "radTextBoxControl1";
-            this.radTextBoxControl1.Size = new System.Drawing.Size(356, 20);
-            this.radTextBoxControl1.TabIndex = 95;
-            this.radTextBoxControl1.ThemeName = "MedicalAppTheme";
+            this.txtLen.Location = new System.Drawing.Point(134, 93);
+            this.txtLen.Name = "txtLen";
+            this.txtLen.Size = new System.Drawing.Size(356, 20);
+            this.txtLen.TabIndex = 95;
+            this.txtLen.ThemeName = "MedicalAppTheme";
             // 
             // radLabel1
             // 
@@ -465,21 +454,21 @@
             this.txtProject.TabIndex = 54;
             this.txtProject.ThemeName = "MedicalAppTheme";
             // 
-            // middleNameTextBoxControl
+            // txtLocation
             // 
-            this.middleNameTextBoxControl.Location = new System.Drawing.Point(134, 41);
-            this.middleNameTextBoxControl.Name = "middleNameTextBoxControl";
-            this.middleNameTextBoxControl.Size = new System.Drawing.Size(356, 20);
-            this.middleNameTextBoxControl.TabIndex = 55;
-            this.middleNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.txtLocation.Location = new System.Drawing.Point(134, 41);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(356, 20);
+            this.txtLocation.TabIndex = 55;
+            this.txtLocation.ThemeName = "MedicalAppTheme";
             // 
-            // lastNameTextBoxControl
+            // txtLimit
             // 
-            this.lastNameTextBoxControl.Location = new System.Drawing.Point(134, 67);
-            this.lastNameTextBoxControl.Name = "lastNameTextBoxControl";
-            this.lastNameTextBoxControl.Size = new System.Drawing.Size(356, 20);
-            this.lastNameTextBoxControl.TabIndex = 56;
-            this.lastNameTextBoxControl.ThemeName = "MedicalAppTheme";
+            this.txtLimit.Location = new System.Drawing.Point(134, 67);
+            this.txtLimit.Name = "txtLimit";
+            this.txtLimit.Size = new System.Drawing.Size(356, 20);
+            this.txtLimit.TabIndex = 56;
+            this.txtLimit.ThemeName = "MedicalAppTheme";
             // 
             // panelBottom
             // 
@@ -499,7 +488,7 @@
             this.radPageView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView.Location = new System.Drawing.Point(0, 309);
             this.radPageView.Name = "radPageView";
-            this.radPageView.SelectedPage = this.radPageViewPage1;
+            this.radPageView.SelectedPage = this.radPageViewPage5;
             this.radPageView.Size = new System.Drawing.Size(955, 262);
             this.radPageView.TabIndex = 74;
             // 
@@ -563,12 +552,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTypePavement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).EndInit();
             this.radLabel21.ResumeLayout(false);
             this.radLabel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSidewalkWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
             this.radLabel13.ResumeLayout(false);
             this.radLabel13.PerformLayout();
@@ -577,23 +566,22 @@
             this.radLabel15.ResumeLayout(false);
             this.radLabel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPavementWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
             this.radLabel17.ResumeLayout(false);
             this.radLabel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRdWay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
             this.radLabel19.ResumeLayout(false);
             this.radLabel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).EndInit();
-            this.radLabel9.ResumeLayout(false);
-            this.radLabel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtdateEst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtScope)).EndInit();
+            this.txtScope.ResumeLayout(false);
+            this.txtScope.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAppr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
             this.radLabel7.ResumeLayout(false);
             this.radLabel7.PerformLayout();
@@ -602,12 +590,12 @@
             this.radLabel5.ResumeLayout(false);
             this.radLabel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             this.radLabel3.ResumeLayout(false);
             this.radLabel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
@@ -615,8 +603,8 @@
             this.radLabel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProject)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.middleNameTextBoxControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lastNameTextBoxControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLimit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView)).EndInit();
             this.radPageView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -632,17 +620,17 @@
         private System.Windows.Forms.Panel panelInfo;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadLabel radLabel6;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl2;
+        private Telerik.WinControls.UI.RadTextBoxControl txtDuration;
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadLabel radLabel4;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl1;
+        private Telerik.WinControls.UI.RadTextBoxControl txtLen;
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadLabel radLabel11;
         private Telerik.WinControls.UI.RadLabel radLabel12;
         private Telerik.WinControls.UI.RadTextBoxControl txtProject;
-        private Telerik.WinControls.UI.RadTextBoxControl middleNameTextBoxControl;
-        private Telerik.WinControls.UI.RadTextBoxControl lastNameTextBoxControl;
+        private Telerik.WinControls.UI.RadTextBoxControl txtLocation;
+        private Telerik.WinControls.UI.RadTextBoxControl txtLimit;
         private System.Windows.Forms.Panel panelBottom;
         private Telerik.WinControls.UI.RadPageView radPageView;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPage1;
@@ -652,24 +640,23 @@
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPage5;
         private Telerik.WinControls.UI.RadLabel radLabel7;
         private Telerik.WinControls.UI.RadLabel radLabel8;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl3;
-        private Telerik.WinControls.UI.RadLabel radLabel9;
+        private Telerik.WinControls.UI.RadTextBoxControl txtAppr;
+        private Telerik.WinControls.UI.RadLabel txtScope;
         private Telerik.WinControls.UI.RadLabel radLabel10;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl4;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl5;
+        private Telerik.WinControls.UI.RadTextBoxControl txtSidewalkWidth;
         private Telerik.WinControls.UI.RadLabel radLabel13;
         private Telerik.WinControls.UI.RadLabel radLabel14;
         private Telerik.WinControls.UI.RadLabel radLabel15;
         private Telerik.WinControls.UI.RadLabel radLabel16;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl6;
+        private Telerik.WinControls.UI.RadTextBoxControl txtPavementWidth;
         private Telerik.WinControls.UI.RadLabel radLabel17;
         private Telerik.WinControls.UI.RadLabel radLabel18;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl7;
+        private Telerik.WinControls.UI.RadTextBoxControl txtRdWay;
         private Telerik.WinControls.UI.RadLabel radLabel19;
         private Telerik.WinControls.UI.RadLabel radLabel20;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl8;
+        private Telerik.WinControls.UI.RadTextBoxControl txtdateEst;
         private Telerik.WinControls.UI.RadLabel radLabel21;
         private Telerik.WinControls.UI.RadLabel radLabel22;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl9;
+        private Telerik.WinControls.UI.RadTextBoxControl txtTypePavement;
     }
 }

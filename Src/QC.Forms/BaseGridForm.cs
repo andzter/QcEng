@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Spreadsheet;
+using QC.Forms.Lib;
 using QC.Lib;
 using System;
 using System.Collections.Generic;
@@ -16,17 +17,14 @@ namespace QC.Forms
 {
     public partial class BaseGridForm : Form
     {
-
-        
-
         protected List<string> columnNames;
         protected Type[] columnTypes;
         protected string dataFormText;
 
         private string _modulecode = string.Empty;
-        protected string _userId = Lib.Settings.GetSetting("userid");
-        protected string _userName = Lib.Settings.GetSetting("username");
-         
+        protected string _userId = Global.UserId();
+        protected string _userName = Global.UserName();
+
         public string Title
         {
             set {
@@ -139,7 +137,7 @@ namespace QC.Forms
             NewRecord();
         }
 
-        public void Record_Updated(object sender, EventArgs e)
+        public void GridRecord_Updated(object sender, EventArgs e)
         {
             //event when edit record is fired.
             RefreshData();

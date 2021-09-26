@@ -76,7 +76,7 @@ namespace QC.Forms.List
         protected override void NewRecord()
         {
             Entry.DupaHeader oEntry = new Entry.DupaHeader();
-            oEntry.UpdateHandler += Record_Updated;
+            oEntry.UpdateHandler += GridRecord_Updated;
             oEntry.Show();
 
 
@@ -88,7 +88,7 @@ namespace QC.Forms.List
             {
 
                 Entry.DupaHeader oEntry = new Entry.DupaHeader(selectedrow.Cells[0].Value.ToString());
-                oEntry.UpdateHandler += Record_Updated;
+                oEntry.UpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }
         }

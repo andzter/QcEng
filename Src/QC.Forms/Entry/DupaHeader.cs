@@ -1,4 +1,5 @@
-﻿using QC.Lib;
+﻿using QC.Forms.Lib;
+using QC.Lib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace QC.Forms.Entry
 {
     public partial class DupaHeader : Telerik.WinControls.UI.RadForm
     {
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Settings.GetSetting("userid");
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 
@@ -68,10 +69,7 @@ namespace QC.Forms.Entry
             LoadSummaryGrid();
         }
 
-        private void lblTtile_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void CloseWindow()
         {

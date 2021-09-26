@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Text;
-using System.Windows.Forms;
-using Telerik.WinControls;
+using Telerik.WinControls.UI;
 using QC.Lib;
 
 namespace QC.Forms.Entry
 {
-    public partial class LaborCostManual : Telerik.WinControls.UI.RadForm
+    public partial class LaborCostManual : RadForm
     {
 
-        protected string _userid = Lib.Settings.GetSetting("userid");
+        protected string _userid = Global.UserId();
 
         public delegate void UpdateEventHandler(object sender, EventArgs e);
 

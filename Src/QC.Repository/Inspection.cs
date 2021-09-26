@@ -11,14 +11,30 @@ namespace QC.Repository
     {
         readonly Lib.DataAccess dataacess = new Lib.DataAccess();
 
-        public DataRow Save(params object[] args)
+        public void Save(params object[] args)
         {
-            return dataacess.GetDataRow("usp_InspectionSave", args);
+            dataacess.ExecuteNonQuery("usp_InspectionSave", args);
+        }
+
+        public DataRow SaveDetail(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_InspectionSaveDetail", args);
+        }
+
+        public DataRow SaveDetailAttachment(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_InspectionSaveAttachment", args);
         }
 
         public DataTable GetList(params object[] args)
         {
             return dataacess.GetDataTable("usp_InspectionGetList", args);
+        }
+
+
+        public DataRow Get(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_InspectionGet", args);
         }
 
         public DataTable GetHistory(params object[] args)
@@ -30,6 +46,19 @@ namespace QC.Repository
         {
             return dataacess.GetDataRow("usp_InspectionGetbyId", args);
         }
+
+        // get detail row
+        public DataRow GetDetail(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_InspectionDetail", args);
+        }
+
+        // get all project detail
+        public DataTable GetDetails(params object[] args)
+        {
+            return dataacess.GetDataTable("usp_InspectionDetails", args);
+        }
+
 
         public int Delete(params object[] args)
         {
