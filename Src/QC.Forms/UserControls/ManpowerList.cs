@@ -12,9 +12,9 @@ using Telerik.WinControls;
 
 namespace QC.Forms.UserControls
 {
-    public partial class EquipmentList : UserControl
+    public partial class ManpowerList : UserControl
     {
-        public EquipmentList()
+        public ManpowerList()
         {
             InitializeComponent();
         }
@@ -22,10 +22,10 @@ namespace QC.Forms.UserControls
         private DataTable GetData()
         {
             //return null;
-            return new QC.Repository.Project().GetDataTable("select '' as Id, Equipment [Name of Equipment], UnitNo [No.Of Unit] from [ProjectEquipments]");
+            return new QC.Repository.Project().GetDataTable("select 1 as id, Manpower, UnitNo[No.Of Unit] from [ProjectManpower]");
         }
 
-        public EquipmentList(string projectId)
+        public ManpowerList(string projectId)
         {
             try
             {

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Repository", "QC.Reposit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Forms.Lib", "QC.Forms.Lib\QC.Forms.Lib.csproj", "{94C8C6B7-8688-405D-8176-F0D0997A5285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Reports", "QC.Reports\QC.Reports.csproj", "{F1F3CC94-3917-4262-BDA8-82410403C10A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QC.Forms.Admin", "QC.Forms.Admin\QC.Forms.Admin.csproj", "{3EF59B4A-FA70-4CD2-A370-4DC6979CF8F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C8C6B7-8688-405D-8176-F0D0997A5285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F3CC94-3917-4262-BDA8-82410403C10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F3CC94-3917-4262-BDA8-82410403C10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F3CC94-3917-4262-BDA8-82410403C10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F3CC94-3917-4262-BDA8-82410403C10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF59B4A-FA70-4CD2-A370-4DC6979CF8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF59B4A-FA70-4CD2-A370-4DC6979CF8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF59B4A-FA70-4CD2-A370-4DC6979CF8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF59B4A-FA70-4CD2-A370-4DC6979CF8F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

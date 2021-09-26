@@ -31,6 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DocumentFormat.OpenXml, Version=2.13.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>..\QC.Engineering\packages\DocumentFormat.OpenXml.2.13.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
@@ -55,6 +60,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -133,17 +140,11 @@
     <Compile Include="Entry\DEDFolders.Designer.cs">
       <DependentUpon>DEDFolders.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entry\DesignEstimate.cs">
+    <Compile Include="Entry\DesignProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entry\DesignEstimate.Designer.cs">
-      <DependentUpon>DesignEstimate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Entry\DesignTOR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Entry\DesignTOR.Designer.cs">
-      <DependentUpon>DesignTOR.cs</DependentUpon>
+    <Compile Include="Entry\DesignProject.Designer.cs">
+      <DependentUpon>DesignProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Entry\DUPA.cs">
       <SubType>Form</SubType>
@@ -210,12 +211,6 @@
     </Compile>
     <Compile Include="Entry\NewProject.Designer.cs">
       <DependentUpon>NewProject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Entry\DesignPlanDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Entry\DesignPlanDetails.Designer.cs">
-      <DependentUpon>DesignPlanDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -321,6 +316,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QC_EngDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ReportViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewerControl.Designer.cs">
+      <DependentUpon>ReportViewerControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\RptViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +340,30 @@
     </Compile>
     <Compile Include="UserControls\AutoCadFiles.Designer.cs">
       <DependentUpon>AutoCadFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManpowerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManpowerList.Designer.cs">
+      <DependentUpon>ManpowerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InspectionPhoto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InspectionPhoto.Designer.cs">
+      <DependentUpon>InspectionPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlanDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PlanDetails.Designer.cs">
+      <DependentUpon>PlanDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Plans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Plans.Designer.cs">
+      <DependentUpon>Plans.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Schedule.cs">
       <SubType>UserControl</SubType>
@@ -388,12 +413,6 @@
     <Compile Include="UserControls\Inspection.Designer.cs">
       <DependentUpon>Inspection.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\PersonnelList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\PersonnelList.Designer.cs">
-      <DependentUpon>PersonnelList.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ProjectCertificationcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -412,11 +431,29 @@
     <Compile Include="UserControls\ProjectSched.Designer.cs">
       <DependentUpon>ProjectSched.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\SER.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SER.Designer.cs">
+      <DependentUpon>SER.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\SOW.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\SOW.Designer.cs">
       <DependentUpon>SOW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SurveyReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SurveyReport.Designer.cs">
+      <DependentUpon>SurveyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TakeOff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TakeOff.Designer.cs">
+      <DependentUpon>TakeOff.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TechSpecs.cs">
       <SubType>UserControl</SubType>
@@ -450,11 +487,8 @@
     <EmbeddedResource Include="Entry\DEDFolders.resx">
       <DependentUpon>DEDFolders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entry\DesignEstimate.resx">
-      <DependentUpon>DesignEstimate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Entry\DesignTOR.resx">
-      <DependentUpon>DesignTOR.cs</DependentUpon>
+    <EmbeddedResource Include="Entry\DesignProject.resx">
+      <DependentUpon>DesignProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Entry\DUPA.resx">
       <DependentUpon>DUPA.cs</DependentUpon>
@@ -489,9 +523,6 @@
     <EmbeddedResource Include="Entry\NewProject.resx">
       <DependentUpon>NewProject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entry\DesignPlanDetails.resx">
-      <DependentUpon>DesignPlanDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="List\Communication.resx">
       <DependentUpon>Communication.cs</DependentUpon>
     </EmbeddedResource>
@@ -510,11 +541,23 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Dupa.rdlc" />
+    <EmbeddedResource Include="Reports\ReportViewerControl.resx">
+      <DependentUpon>ReportViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\RptViewer.resx">
       <DependentUpon>RptViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AddNewProject.resx">
       <DependentUpon>AddNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FilePDF.resx">
+      <DependentUpon>FilePDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InspectionPhoto.resx">
+      <DependentUpon>InspectionPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManpowerList.resx">
+      <DependentUpon>ManpowerList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Schedule.resx">
       <DependentUpon>Schedule.cs</DependentUpon>
@@ -533,9 +576,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Inspection.resx">
       <DependentUpon>Inspection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\PersonnelList.resx">
-      <DependentUpon>PersonnelList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProjectHeader.resx">
       <DependentUpon>ProjectHeader.cs</DependentUpon>

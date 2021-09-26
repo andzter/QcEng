@@ -1,7 +1,7 @@
 ﻿
 namespace QC.Forms.UserControls
 {
-    partial class PersonnelList
+    partial class ManpowerList
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,6 +37,7 @@ namespace QC.Forms.UserControls
             // 
             // radGrid
             // 
+            this.radGrid.AutoSizeRows = true;
             this.radGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radGrid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radGrid.Location = new System.Drawing.Point(0, 0);
@@ -45,16 +46,16 @@ namespace QC.Forms.UserControls
             // 
             this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGrid.Name = "radGrid";
-            this.radGrid.Size = new System.Drawing.Size(766, 369);
+            this.radGrid.Size = new System.Drawing.Size(382, 331);
             this.radGrid.TabIndex = 13;
             // 
-            // PersonnelList
+            // EquipmentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radGrid);
-            this.Name = "PersonnelList";
-            this.Size = new System.Drawing.Size(766, 369);
+            this.Name = "EquipmentList";
+            this.Size = new System.Drawing.Size(382, 331);
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).EndInit();
             this.ResumeLayout(false);
