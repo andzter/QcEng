@@ -29,41 +29,82 @@ namespace QC.Forms.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManpowerList));
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnAdd = new System.Windows.Forms.ToolStripButton();
+            this.btnDelete = new System.Windows.Forms.ToolStripButton();
             this.radGrid = new Telerik.WinControls.UI.RadGridView();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).BeginInit();
             this.SuspendLayout();
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAdd,
+            this.btnDelete});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(382, 25);
+            this.toolStrip1.TabIndex = 15;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(33, 22);
+            this.btnAdd.Text = "Add";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(44, 22);
+            this.btnDelete.Text = "Delete";
             // 
             // radGrid
             // 
             this.radGrid.AutoSizeRows = true;
             this.radGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radGrid.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radGrid.Location = new System.Drawing.Point(0, 0);
+            this.radGrid.Location = new System.Drawing.Point(0, 25);
             // 
             // 
             // 
             this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGrid.Name = "radGrid";
-            this.radGrid.Size = new System.Drawing.Size(382, 331);
-            this.radGrid.TabIndex = 13;
+            this.radGrid.Size = new System.Drawing.Size(382, 306);
+            this.radGrid.TabIndex = 16;
             // 
-            // EquipmentList
+            // ManpowerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radGrid);
-            this.Name = "EquipmentList";
+            this.Controls.Add(this.toolStrip1);
+            this.Name = "ManpowerList";
             this.Size = new System.Drawing.Size(382, 331);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btnAdd;
+        private System.Windows.Forms.ToolStripButton btnDelete;
         private Telerik.WinControls.UI.RadGridView radGrid;
     }
 }
