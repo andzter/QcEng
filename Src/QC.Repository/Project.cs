@@ -39,6 +39,12 @@ namespace QC.Repository
             return dataacess.GetDataRow("usp_ProjectGetbyId", id);
         }
 
+        public DataRow GetProjectPrintDetails(string id)
+        {
+            return dataacess.GetDataRow("usp_ProjectPrintDetails", id);
+        }
+
+
         public DataTable GetProjectDesignList(string userId)
         {
             return dataacess.GetDataTable("usp_ProjectDesignList", userId);

@@ -45,7 +45,6 @@
             this.panelBottom = new System.Windows.Forms.Panel();
             this.cancelButton = new Telerik.WinControls.UI.RadButton();
             this.saveButton = new Telerik.WinControls.UI.RadButton();
-            this.qC_EngDataSet1 = new QC.Forms.QC_EngDataSet();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +54,6 @@
             this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qC_EngDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,7 +112,7 @@
             this.radPageView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView.Location = new System.Drawing.Point(0, 0);
             this.radPageView.Name = "radPageView";
-            this.radPageView.SelectedPage = this.pgTechSpecs;
+            this.radPageView.SelectedPage = this.pgSOW;
             this.radPageView.Size = new System.Drawing.Size(1090, 322);
             this.radPageView.TabIndex = 0;
             // 
@@ -222,11 +220,6 @@
             this.saveButton.ThemeName = "MedicalAppTheme";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // qC_EngDataSet1
-            // 
-            this.qC_EngDataSet1.DataSetName = "QC_EngDataSet";
-            this.qC_EngDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // panelInfo
             // 
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -259,7 +252,6 @@
             this.panelBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saveButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qC_EngDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -281,7 +273,6 @@
         private Telerik.WinControls.UI.RadPageViewPage pgManpower;
         private Telerik.WinControls.UI.RadButton cancelButton;
         private Telerik.WinControls.UI.RadButton saveButton;
-        private QC_EngDataSet qC_EngDataSet1;
         private System.Windows.Forms.Panel panelInfo;
         private Telerik.WinControls.UI.RadPageViewPage pgTechSpecs;
         private Telerik.WinControls.UI.RadPageViewPage pgCADFile;

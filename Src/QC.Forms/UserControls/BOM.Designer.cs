@@ -43,6 +43,7 @@ namespace QC.Forms.UserControls
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
+            this.btnPrint = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -62,10 +63,11 @@ namespace QC.Forms.UserControls
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAdd,
-            this.btnDelete});
+            this.btnDelete,
+            this.btnPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(688, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(791, 25);
             this.toolStrip1.TabIndex = 13;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -89,13 +91,23 @@ namespace QC.Forms.UserControls
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(36, 22);
+            this.btnPrint.Text = "Print";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pnlTop);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 436);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(688, 33);
+            this.panel1.Size = new System.Drawing.Size(791, 33);
             this.panel1.TabIndex = 14;
             // 
             // pnlTop
@@ -105,7 +117,7 @@ namespace QC.Forms.UserControls
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(688, 33);
+            this.pnlTop.Size = new System.Drawing.Size(791, 33);
             this.pnlTop.TabIndex = 1;
             // 
             // lblTitle
@@ -113,7 +125,7 @@ namespace QC.Forms.UserControls
             this.lblTitle.AutoSize = true;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(365, 0);
+            this.lblTitle.Location = new System.Drawing.Point(468, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(60, 25);
             this.lblTitle.TabIndex = 4;
@@ -123,7 +135,7 @@ namespace QC.Forms.UserControls
             // 
             this.pnlSearch.Controls.Add(this.txtTotal);
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSearch.Location = new System.Drawing.Point(425, 0);
+            this.pnlSearch.Location = new System.Drawing.Point(528, 0);
             this.pnlSearch.Name = "pnlSearch";
             this.pnlSearch.Size = new System.Drawing.Size(263, 33);
             this.pnlSearch.TabIndex = 3;
@@ -153,6 +165,7 @@ namespace QC.Forms.UserControls
             gridViewTextBoxColumn1.HeaderText = "Id";
             gridViewTextBoxColumn1.IsVisible = false;
             gridViewTextBoxColumn1.Name = "Id";
+            gridViewTextBoxColumn2.FieldName = "Seq";
             gridViewTextBoxColumn2.HeaderText = "No.";
             gridViewTextBoxColumn2.Name = "No";
             gridViewTextBoxColumn3.FieldName = "DupaId";
@@ -199,7 +212,7 @@ namespace QC.Forms.UserControls
             this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.radGrid.Name = "radGrid";
             this.radGrid.ShowGroupPanel = false;
-            this.radGrid.Size = new System.Drawing.Size(688, 411);
+            this.radGrid.Size = new System.Drawing.Size(791, 411);
             this.radGrid.TabIndex = 15;
             this.radGrid.CellEndEdit += new Telerik.WinControls.UI.GridViewCellEventHandler(this.radGrid_CellEndEdit);
             // 
@@ -211,7 +224,7 @@ namespace QC.Forms.UserControls
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "BOM";
-            this.Size = new System.Drawing.Size(688, 469);
+            this.Size = new System.Drawing.Size(791, 469);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -236,5 +249,6 @@ namespace QC.Forms.UserControls
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlSearch;
         private Telerik.WinControls.UI.RadTextBoxControl txtTotal;
+        private System.Windows.Forms.ToolStripButton btnPrint;
     }
 }

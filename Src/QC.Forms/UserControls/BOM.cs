@@ -1,5 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Spreadsheet;
 using QC.Forms.Lib;
+using QC.Forms.Reports;
+using QC.Lib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,23 +13,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls.UI;
 
+
 namespace QC.Forms.UserControls
 {
     public partial class BOM : UserControl
     {
         protected List<string> columnNames;
+        protected List<string> ItemIds;
         protected Type[] columnTypes;
         protected string dataFormText;
-        private string _id = "";
+        private string _projectId = "";
+        private string _reportName = "";
 
         public delegate void ChangeEventHandler(object sender, EventArgs e);
         public event ChangeEventHandler ChangeHandler;
 
         private bool isChange = false;
 
+        private Repository.ProjectBom _service = new Repository.ProjectBom();
 
-        public BOM(string id)
+
+        public BOM(string id, string reportName = "")
         {
+            _reportName = reportName;
+            _projectId = id;
+
             InitializeComponent();
             columnNames = new List<string>();
             this.radGrid.AllowAddNewRow = true;
@@ -48,7 +58,7 @@ namespace QC.Forms.UserControls
 
             //MessageBox.Show(id);
             //var data = new Repository.ProjectBom2().GetProjectBombyId2(id);
-            _id = id;
+            
             //LoadData();
         }
 
@@ -82,7 +92,7 @@ namespace QC.Forms.UserControls
                                 case 4: col.Width = 160; col.ReadOnly = true; break;
                                 default: col.Width = 70; col.ReadOnly = false; break;
                             }
-                            if (col.Index >= 17) col.FormatString = "{0:#,##}";
+                           // if (col.Index >= 17) col.FormatString = "{0:#,##}";
 
                         }
                     }
@@ -101,6 +111,9 @@ namespace QC.Forms.UserControls
                 //radGrid.Columns[4].ReadOnly = true;
 
                 radGrid.EndUpdate(true);
+                SetNo();
+                GetTotal();
+
                 //lblCount.Text = @"Record Count : " + rGrid.RowCount;
 
 
@@ -125,10 +138,19 @@ namespace QC.Forms.UserControls
             }
         }
 
-        protected virtual DataTable GetData()
+        private DataTable GetData()
         {
             //return null;
-            return new QC.Repository.ProjectBom2().GetProjectBom2();
+            var data = _service.GetProjectBomDetail(_projectId);
+            ItemIds = new List<string>();
+            if (data != null && data.Rows.Count > 0)
+                foreach (var row in data.Rows)
+                {
+                    var r = (System.Data.DataRow)row;
+                    ItemIds.Add(r.ItemArray[2].ToString());
+                }
+
+            return data;
         }
 
         protected virtual Workbook CreateWorkbook()
@@ -269,8 +291,6 @@ namespace QC.Forms.UserControls
                 row.Cells["Unit"].Value = e.SelectedRow.Cells["Unit"].Value;
                 row.Cells["UnitCost"].Value = e.SelectedRow.Cells["UnitCost"].Value;
                 row.Cells["Amount"].Value = e.SelectedRow.Cells["UnitCost"].Value;
-
-
                 radGrid.EndUpdate();
 
                 // Change_Entry(sender, new EventArgs());
@@ -357,6 +377,50 @@ namespace QC.Forms.UserControls
             }
             else
                 Util.ShowInfoMessage("Please Select Row to Remove", "Remove");
+        }
+
+
+        public void SaveDetails()
+        {
+
+            var dataAdded = new List<string>();
+
+            for (int i = 0; i < radGrid.Rows.Count; i++)
+            {
+                _service.SaveDetails(radGrid.Rows[i].Cells["id"].Value.ToString(), _projectId, radGrid.Rows[i].Cells["No"].Value.ToString().ToInt(), radGrid.Rows[i].Cells["DupaId"].Value.ToString(),
+                 radGrid.Rows[i].Cells["ItemCode"].Value.ToString(), radGrid.Rows[i].Cells["Qty"].Value.ToString().ToDbl(), radGrid.Rows[i].Cells["UnitCost"].Value.ToString().ToDbl(), QC.Lib.Global.UserId());
+                dataAdded.Add(radGrid.Rows[i].Cells["DupaId"].Value.ToString());
+            }
+
+            var dataDel = ItemIds.Where(a => !dataAdded.Contains(a)).ToList();
+            if (dataDel.Count > 0)
+            {
+                foreach (var delId in dataDel)
+                {
+                    _service.DeleteDetails(delId, _projectId);
+                }
+            }
+
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            var data = _service.GetProjectBomDetailPrint(_projectId);
+            var row = _service.GetProjectBomHeaderPrint(_projectId);
+
+            _reportName = string.IsNullOrEmpty(_reportName) ? "AgencyEstimate.rdlc" : "ProgramOfWork.rdlc";
+
+            RptViewer report = new RptViewer() { ReportFile = _reportName, ReportSource = "Dupadata", ReportData = data };
+            report.AddReportParameters("ProjectName", row["ProjectName"].ToString());
+            report.AddReportParameters("Location", row["Location"].ToString());
+            report.AddReportParameters("Limits", row["Limits"].ToString());
+            report.AddReportParameters("Lenght", row["Lenght"].ToString());
+            report.AddReportParameters("Duration", row["Duration"].ToString());
+            report.AddReportParameters("AAE", row["Total"].ToString().ToCurrecyString("P"));
+            report.AddReportParameters("AmountInWords", row["Total"].ToString().ConvertToWords("Only").ToUpper());
+            report.AddReportParameters("Total", row["Total"].ToString().ToCurrecyString("P"));
+
+            report.ShowDialog();
         }
     }
 }

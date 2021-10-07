@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QC_EngDataSet2" targetNamespace="http://tempuri.org/QC_EngDataSet2.xsd" xmlns:mstns="http://tempuri.org/QC_EngDataSet2.xsd" xmlns="http://tempuri.org/QC_EngDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QC_EngConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QC_EngConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QC.Forms.Properties.Settings.GlobalReference.Default.QC_EngConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwProjectBOMTableAdapter" GeneratorDataComponentClassName="vwProjectBOMTableAdapter" Name="vwProjectBOM" UserDataComponentName="vwProjectBOMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QC_EngConnectionString1 (Settings)" DbObjectName="QC_Eng.dbo.vwProjectBOM" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProjectId, Seq, ItemCode, Description, Qty, Unit, Price, Amount FROM dbo.vwProjectBOM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProjectId" DataSetColumn="ProjectId" />
+              <Mapping SourceColumn="Seq" DataSetColumn="Seq" />
+              <Mapping SourceColumn="ItemCode" DataSetColumn="ItemCode" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QC_EngDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QC_EngDataSet2" msprop:Generator_UserDSName="QC_EngDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwProjectBOM" msprop:Generator_TableClassName="vwProjectBOMDataTable" msprop:Generator_TableVarName="tablevwProjectBOM" msprop:Generator_TablePropName="vwProjectBOM" msprop:Generator_RowDeletingName="vwProjectBOMRowDeleting" msprop:Generator_RowChangingName="vwProjectBOMRowChanging" msprop:Generator_RowEvHandlerName="vwProjectBOMRowChangeEventHandler" msprop:Generator_RowDeletedName="vwProjectBOMRowDeleted" msprop:Generator_UserTableName="vwProjectBOM" msprop:Generator_RowChangedName="vwProjectBOMRowChanged" msprop:Generator_RowEvArgName="vwProjectBOMRowChangeEvent" msprop:Generator_RowClassName="vwProjectBOMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectId" msprop:Generator_ColumnVarNameInTable="columnProjectId" msprop:Generator_ColumnPropNameInRow="ProjectId" msprop:Generator_ColumnPropNameInTable="ProjectIdColumn" msprop:Generator_UserColumnName="ProjectId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seq" msprop:Generator_ColumnVarNameInTable="columnSeq" msprop:Generator_ColumnPropNameInRow="Seq" msprop:Generator_ColumnPropNameInTable="SeqColumn" msprop:Generator_UserColumnName="Seq" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" msprop:Generator_UserColumnName="ItemCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:double" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

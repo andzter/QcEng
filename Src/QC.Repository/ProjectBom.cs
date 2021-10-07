@@ -1,41 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using QC.Lib;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QC.Repository
 {
     public class ProjectBom
     {
-        Lib.DataAccess dataacess = new Lib.DataAccess();
+        DataAccess dataacess = new DataAccess();
 
-        public DataTable GetProjectBom()
+        public DataTable GetProjectBomDetail(params object[] args)
         {
-            return dataacess.GetDataTable("select a.ProjectId, a.ItemCode, b.description,b.unit,c.derivation, a.Length, a.Width, a.Depth,a.Thickness," +
-                "a.NumFactor1, a.NumFactor2, a.NumFactor3, a.ADLength, a.ADWidth, a.ADThickness, a.ADNoofUnits, a.SectionalArea, "+
-                "a.NoofUnits, a.WtMetricTon " +
-                "from ProjectBom a " +
-                "left join dupa b on " +
-                "a.itemcode = b.itemcode " +
-                "left join dupaderivation c on " +
-                "a.itemcode = c.itemcode");
+            return dataacess.GetDataTable("usp_BOMGetDetails", args);
+        }
+
+        public DataTable GetProjectBomDetailPrint(params object[] args)
+        {
+            return dataacess.GetDataTable("usp_ProjectPrintDetails", args);
+        }
+
+        public DataRow GetProjectBomHeaderPrint(params object[] args)
+        {
+            return dataacess.GetDataRow("usp_BOMPrintHeader", args);
         }
 
         public DataRow SaveProjectBom(params object[] args)
         {
-            return dataacess.GetDataRow("usp_ProjectBomSaveNew", args);
+            return dataacess.GetDataRow("usp_ProjectHeaderBOM", args);
         }
 
         public DataRow SaveDetails(params object[] args)
         {
-            return dataacess.GetDataRow("usp_ProjectBomSave", args);
+            /*
+                @id [nvarchar](50), 	@ProjectId [nvarchar](50),	@Seq [Int],	@DupaId [nvarchar](50),
+	             @ItemCode [varchar](200), 	@Qty [float],	@Price [money], 	@user [nvarchar](50)
+            */
+            return dataacess.GetDataRow("usp_BOMSaveDetail", args);
         }
 
-        public DataRow DeleteDetails(params object[] args)
+        public int DeleteDetails(params object[] args)
         {
-            return dataacess.GetDataRow("usp_ProjectBomDelete", args);
+            return dataacess.ExecSQLScalarSP("usp_BOMDeleteDetail", args).ToString().ToInt();
         }
 
         public DataRow GetProjectBombyId(string id)

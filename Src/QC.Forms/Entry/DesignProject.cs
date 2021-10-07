@@ -1,4 +1,5 @@
-﻿using QC.Forms.UserControls;
+﻿using QC.Forms.Reports;
+using QC.Forms.UserControls;
 using QC.Lib;
 using System;
 using System.Windows.Forms;
@@ -37,12 +38,14 @@ namespace QC.Forms.Entry
 
             var uBom = new BOM(_id) { Dock = DockStyle.Fill };
             pgEstimates.Controls.Add(uBom);
-            pgSOW.Controls.Add(uBom);
-            pgTakeOff.Controls.Add(uBom);
 
+            pgSOW.Controls.Add(new BOM(_id,"SOW") { Dock = DockStyle.Fill });
+
+            pgTakeOff.Controls.Add(uBom);
+             
 
             //var lstEquipment = 
-           // var lstManpower = new PersonnelList(_id) { Dock = DockStyle.Fill };
+            // var lstManpower = new PersonnelList(_id) { Dock = DockStyle.Fill };
 
             pgEquipment.Controls.Add(new EquipmentList(_id) { Dock = DockStyle.Fill });
             pgManpower.Controls.Add(new ManpowerList(_id) { Dock = DockStyle.Fill });
@@ -84,12 +87,28 @@ namespace QC.Forms.Entry
             // var frm = (new DesignPlanDetails(_id));
             // frm.Show();
 
+            QC.Forms.UserControls.BOM ctrl = (QC.Forms.UserControls.BOM)pgEstimates.Controls[0];
+            ctrl.SaveDetails();
+
+            QC.Forms.UserControls.ManpowerList ctrlmanpower = (QC.Forms.UserControls.ManpowerList)pgManpower.Controls[0];
+            ctrlmanpower.SaveDetails();
+
+
+            QC.Forms.UserControls.EquipmentList ctrlequipment = (QC.Forms.UserControls.EquipmentList)pgEquipment.Controls[0];
+            ctrlequipment.SaveDetails();
+
             MessageBox.Show("Saved!");
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            (new List.ProjectBom2("1234")).Show();
+            var data = (new QC.Lib.DataAccess()).GetDataTable("select * from dupa");
+            RptViewer repPO = new RptViewer() { ReportFile = "Dupa.rdlc", ReportSource = "dupaData", ReportData = data };
+           // repPO.AddReportParameters("suppaddress", suppAddress);
+            //repPO.AddReportParameters("custaddress", custAddress);
+            //repPO.AddReportParameters("remarks", sRemarks);
+            //repPO.AddReportParameters("approveby", (new App.Lib.DataAccess()).ExecSQLScalar(sql).ToString());
+            repPO.ShowDialog();
         }
     }
 }

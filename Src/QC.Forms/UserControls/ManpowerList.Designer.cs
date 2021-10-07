@@ -30,10 +30,12 @@ namespace QC.Forms.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManpowerList));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnPrint = new System.Windows.Forms.ToolStripButton();
             this.radGrid = new Telerik.WinControls.UI.RadGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGrid)).BeginInit();
@@ -44,7 +46,9 @@ namespace QC.Forms.UserControls
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAdd,
-            this.btnDelete});
+            this.btnDelete,
+            this.toolStripSeparator1,
+            this.btnPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(382, 25);
@@ -59,6 +63,7 @@ namespace QC.Forms.UserControls
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(33, 22);
             this.btnAdd.Text = "Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -68,6 +73,22 @@ namespace QC.Forms.UserControls
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(44, 22);
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(36, 22);
+            this.btnPrint.Text = "Print";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // radGrid
             // 
@@ -78,7 +99,7 @@ namespace QC.Forms.UserControls
             // 
             // 
             // 
-            this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.radGrid.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.radGrid.Name = "radGrid";
             this.radGrid.Size = new System.Drawing.Size(382, 306);
             this.radGrid.TabIndex = 16;
@@ -106,5 +127,7 @@ namespace QC.Forms.UserControls
         private System.Windows.Forms.ToolStripButton btnAdd;
         private System.Windows.Forms.ToolStripButton btnDelete;
         private Telerik.WinControls.UI.RadGridView radGrid;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btnPrint;
     }
 }

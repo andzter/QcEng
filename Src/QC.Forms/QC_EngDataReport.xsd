@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QC_EngDataReport" targetNamespace="http://tempuri.org/QC_EngDataReport.xsd" xmlns:mstns="http://tempuri.org/QC_EngDataReport.xsd" xmlns="http://tempuri.org/QC_EngDataReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QC_EngConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QC_EngConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QC.Forms.Properties.Settings.GlobalReference.Default.QC_EngConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_rep_ProjectEquipmentTableAdapter" GeneratorDataComponentClassName="vw_rep_ProjectEquipmentTableAdapter" Name="vw_rep_ProjectEquipment" UserDataComponentName="vw_rep_ProjectEquipmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QC_EngConnectionString1 (Settings)" DbObjectName="QC_Eng.dbo.vw_rep_ProjectEquipment" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, [Order], Equipment, No FROM dbo.vw_rep_ProjectEquipment</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Order" DataSetColumn="Order" />
+              <Mapping SourceColumn="Equipment" DataSetColumn="Equipment" />
+              <Mapping SourceColumn="No" DataSetColumn="No" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_rep_ProjectManpowerTableAdapter" GeneratorDataComponentClassName="vw_rep_ProjectManpowerTableAdapter" Name="vw_rep_ProjectManpower" UserDataComponentName="vw_rep_ProjectManpowerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QC_EngConnectionString1 (Settings)" DbObjectName="QC_Eng.dbo.vw_rep_ProjectManpower" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, [Order], Manpower, No FROM dbo.vw_rep_ProjectManpower</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Order" DataSetColumn="Order" />
+              <Mapping SourceColumn="Manpower" DataSetColumn="Manpower" />
+              <Mapping SourceColumn="No" DataSetColumn="No" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QC_EngDataReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QC_EngDataReport" msprop:Generator_UserDSName="QC_EngDataReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_rep_ProjectEquipment" msprop:Generator_TableClassName="vw_rep_ProjectEquipmentDataTable" msprop:Generator_TableVarName="tablevw_rep_ProjectEquipment" msprop:Generator_TablePropName="vw_rep_ProjectEquipment" msprop:Generator_RowDeletingName="vw_rep_ProjectEquipmentRowDeleting" msprop:Generator_RowChangingName="vw_rep_ProjectEquipmentRowChanging" msprop:Generator_RowEvHandlerName="vw_rep_ProjectEquipmentRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_rep_ProjectEquipmentRowDeleted" msprop:Generator_UserTableName="vw_rep_ProjectEquipment" msprop:Generator_RowChangedName="vw_rep_ProjectEquipmentRowChanged" msprop:Generator_RowEvArgName="vw_rep_ProjectEquipmentRowChangeEvent" msprop:Generator_RowClassName="vw_rep_ProjectEquipmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Order" msprop:Generator_ColumnVarNameInTable="columnOrder" msprop:Generator_ColumnPropNameInRow="Order" msprop:Generator_ColumnPropNameInTable="OrderColumn" msprop:Generator_UserColumnName="Order" type="xs:int" minOccurs="0" />
+              <xs:element name="Equipment" msprop:Generator_ColumnVarNameInTable="columnEquipment" msprop:Generator_ColumnPropNameInRow="Equipment" msprop:Generator_ColumnPropNameInTable="EquipmentColumn" msprop:Generator_UserColumnName="Equipment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_rep_ProjectManpower" msprop:Generator_TableClassName="vw_rep_ProjectManpowerDataTable" msprop:Generator_TableVarName="tablevw_rep_ProjectManpower" msprop:Generator_TablePropName="vw_rep_ProjectManpower" msprop:Generator_RowDeletingName="vw_rep_ProjectManpowerRowDeleting" msprop:Generator_RowChangingName="vw_rep_ProjectManpowerRowChanging" msprop:Generator_RowEvHandlerName="vw_rep_ProjectManpowerRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_rep_ProjectManpowerRowDeleted" msprop:Generator_UserTableName="vw_rep_ProjectManpower" msprop:Generator_RowChangedName="vw_rep_ProjectManpowerRowChanged" msprop:Generator_RowEvArgName="vw_rep_ProjectManpowerRowChangeEvent" msprop:Generator_RowClassName="vw_rep_ProjectManpowerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Order" msprop:Generator_ColumnVarNameInTable="columnOrder" msprop:Generator_ColumnPropNameInRow="Order" msprop:Generator_ColumnPropNameInTable="OrderColumn" msprop:Generator_UserColumnName="Order" type="xs:int" minOccurs="0" />
+              <xs:element name="Manpower" msprop:Generator_ColumnVarNameInTable="columnManpower" msprop:Generator_ColumnPropNameInRow="Manpower" msprop:Generator_ColumnPropNameInTable="ManpowerColumn" msprop:Generator_UserColumnName="Manpower" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

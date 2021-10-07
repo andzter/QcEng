@@ -311,10 +311,25 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="QC_EngDataReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QC_EngDataReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QC_EngDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QC_EngDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QC_EngDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QC_EngDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QC_EngDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QC_EngDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reports\ReportViewerControl.cs">
       <SubType>UserControl</SubType>
@@ -540,7 +555,43 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Dupa.rdlc" />
+    <None Include="QC_EngDataReport.xsc">
+      <DependentUpon>QC_EngDataReport.xsd</DependentUpon>
+    </None>
+    <None Include="QC_EngDataReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QC_EngDataReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QC_EngDataReport.xss">
+      <DependentUpon>QC_EngDataReport.xsd</DependentUpon>
+    </None>
+    <None Include="QC_EngDataSet2.xsc">
+      <DependentUpon>QC_EngDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QC_EngDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QC_EngDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QC_EngDataSet2.xss">
+      <DependentUpon>QC_EngDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dupa.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\AgencyEstimate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\ProgramOfWork.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\Manpower.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\Equipment.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <EmbeddedResource Include="Reports\ReportViewerControl.resx">
       <DependentUpon>ReportViewerControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -601,6 +652,17 @@
     </None>
     <None Include="QC_EngDataSet.xss">
       <DependentUpon>QC_EngDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QC_EngDataSet1.xsc">
+      <DependentUpon>QC_EngDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QC_EngDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QC_EngDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QC_EngDataSet1.xss">
+      <DependentUpon>QC_EngDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\arrow.png" />
   </ItemGroup>
