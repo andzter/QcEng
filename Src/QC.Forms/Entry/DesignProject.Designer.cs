@@ -112,7 +112,7 @@
             this.radPageView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView.Location = new System.Drawing.Point(0, 0);
             this.radPageView.Name = "radPageView";
-            this.radPageView.SelectedPage = this.pgSOW;
+            this.radPageView.SelectedPage = this.pgEstimates;
             this.radPageView.Size = new System.Drawing.Size(1090, 322);
             this.radPageView.TabIndex = 0;
             // 

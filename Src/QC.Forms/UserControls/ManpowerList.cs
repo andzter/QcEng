@@ -69,12 +69,9 @@ namespace QC.Forms.UserControls
         {
             var data = _service.GetList(_projectId);
             var row = (new Repository.ProjectBom()).GetProjectBomHeaderPrint(_projectId);
-
             RptViewer report = new RptViewer() { ReportFile = "Manpower.rdlc", ReportSource = "datalist", ReportData = data };
             report.AddReportParameters("ProjectName", row["ProjectName"].ToString());
             report.AddReportParameters("Location", row["Location"].ToString());
-
-
             report.ShowDialog();
         }
 

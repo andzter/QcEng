@@ -12,9 +12,12 @@ namespace QC.Forms.UserControls
 {
     public partial class TechSpecs : UserControl
     {
-        public TechSpecs()
+        public TechSpecs(string id)
         {
             InitializeComponent();
+            string url = @"E:\QC_Engr\techspecs.pdf";
+
+            webBrowser.Navigate(url);
         }
     }
 }

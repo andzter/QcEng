@@ -12,7 +12,7 @@ namespace QC.Forms.UserControls
 {
     public partial class SurveyReport : UserControl
     {
-        public SurveyReport()
+        public SurveyReport(string id)
         {
             InitializeComponent();
         }

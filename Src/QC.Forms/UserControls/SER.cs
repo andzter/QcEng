@@ -12,7 +12,7 @@ namespace QC.Forms.UserControls
 {
     public partial class SER : UserControl
     {
-        public SER()
+        public SER(string id)
         {
             InitializeComponent();
         }

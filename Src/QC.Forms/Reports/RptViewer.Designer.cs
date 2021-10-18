@@ -50,7 +50,6 @@
             this.Name = "RptViewer";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RptViewer";
             this.Load += new System.EventHandler(this.RptViewer_Load);
             this.ResumeLayout(false);
 

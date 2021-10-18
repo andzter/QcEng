@@ -29,8 +29,16 @@ namespace QC.Forms.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SurveyReport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "SurveyReport";
+            this.Size = new System.Drawing.Size(536, 409);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

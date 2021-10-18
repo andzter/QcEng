@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QC.Forms.UserControls
 {
-    public partial class PlanDetails : UserControl
+    public partial class InspectionCertificate : UserControl
     {
-        public PlanDetails()
+        public InspectionCertificate(string id)
         {
             InitializeComponent();
         }

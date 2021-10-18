@@ -1,7 +1,7 @@
 ﻿
 namespace QC.Forms.UserControls
 {
-    partial class Estimates
+    partial class Report
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,18 +29,33 @@ namespace QC.Forms.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.rviewer = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // Estimates
+            // rviewer
+            // 
+            this.rviewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rviewer.LocalReport.ReportEmbeddedResource = "QC.Forms.Reports.Dupa.rdlc";
+            this.rviewer.Location = new System.Drawing.Point(0, 0);
+            this.rviewer.Name = "rviewer";
+            this.rviewer.ServerReport.BearerToken = null;
+            this.rviewer.Size = new System.Drawing.Size(813, 477);
+            this.rviewer.TabIndex = 1;
+            // 
+            // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Estimates";
-            this.Size = new System.Drawing.Size(470, 378);
+            this.Controls.Add(this.rviewer);
+            this.Name = "Report";
+            this.Size = new System.Drawing.Size(813, 477);
+            this.Load += new System.EventHandler(this.Report_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer rviewer;
     }
 }

@@ -22,7 +22,7 @@ namespace QC.Forms.Entry
 
             var uc = new AddNewProject() {Dock= DockStyle.Fill };
 
-            radPageViewPage1.Controls.Add(uc);
+            pgEstimates.Controls.Add(uc);
         }
 
         public DEDFolders(string id)
@@ -31,15 +31,38 @@ namespace QC.Forms.Entry
            
             _id = id;
 
-            var uc = new AddNewProject();
- 
+            var uc = new ProjectHeader(_id) { Dock = DockStyle.Fill };
 
-            radPageViewPage1.Controls.Add(uc);
+            //radPageViewPage1.Controls.Add(uc);
 
-            var data = new Repository.Project().GetProjectbyId(id);
-            txtProject.Text = data["project"].ToString();
+            panelInfo.Controls.Add(uc);
 
+            var ucEstTab = new EstimatesTab(_id) { Dock = DockStyle.Fill };
+
+            pgEstimates.Controls.Add(ucEstTab);
+
+            var ucCertInspection = new InspectionCertificate(_id) { Dock = DockStyle.Fill };
+            pgInspectionCert.Controls.Add(ucCertInspection);
+
+            var ucTOR = new TechSpecs(_id) { Dock = DockStyle.Fill };
+            pgTechSpecs.Controls.Add(ucTOR);
+
+            var ucPlansDetails = new PlansDetailsTab(_id) { Dock = DockStyle.Fill };
+            pgPlanDetails.Controls.Add(ucPlansDetails);
+
+            var ucInspReport = new InspectionReport(_id) { Dock = DockStyle.Fill };
+            pgInspectionReport.Controls.Add(ucInspReport);
+
+
+            
         }
+
+
+
+
+
+
+
 
     }
 }

@@ -12,7 +12,7 @@ namespace QC.Forms.UserControls
 {
     public partial class InspectionPhoto : UserControl
     {
-        public InspectionPhoto()
+        public InspectionPhoto(string id)
         {
             InitializeComponent();
         }

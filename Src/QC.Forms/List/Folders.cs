@@ -29,7 +29,7 @@ namespace QC.Forms.List
         {
             if (selectedrow != null)
             {
-                Entry.DEDFolders oEntry = new Entry.DEDFolders();
+                Entry.DEDFolders oEntry = new Entry.DEDFolders(selectedrow.Cells[0].Value.ToString());
                 oEntry.UpdateHandler += GridRecord_Updated;
                 oEntry.Show();
             }

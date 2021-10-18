@@ -1,7 +1,7 @@
 ﻿
 namespace QC.Forms.UserControls
 {
-    partial class PlanDetails
+    partial class InspectionCertificate
     {
         /// <summary> 
         /// Required designer variable.

@@ -12,7 +12,7 @@ namespace QC.Forms.UserControls
 {
     public partial class TakeOff : UserControl
     {
-        public TakeOff()
+        public TakeOff(string id)
         {
             InitializeComponent();
         }

@@ -20,6 +20,9 @@ namespace QC.Forms.UserControls
         public FilePDF(string projectId)
         {
             InitializeComponent();
+            string file = @"E:\QC_Engr\sample.png";
+            webBrowser.Navigate(file);
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

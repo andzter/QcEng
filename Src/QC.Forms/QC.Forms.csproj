@@ -356,6 +356,30 @@
     <Compile Include="UserControls\AutoCadFiles.Designer.cs">
       <DependentUpon>AutoCadFiles.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EstimatesTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EstimatesTab.Designer.cs">
+      <DependentUpon>EstimatesTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InspectionCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InspectionCertificate.Designer.cs">
+      <DependentUpon>InspectionCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InspectionReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InspectionReport.Designer.cs">
+      <DependentUpon>InspectionReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ManpowerList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -368,17 +392,17 @@
     <Compile Include="UserControls\InspectionPhoto.Designer.cs">
       <DependentUpon>InspectionPhoto.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\PlanDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\PlanDetails.Designer.cs">
-      <DependentUpon>PlanDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\Plans.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Plans.Designer.cs">
       <DependentUpon>Plans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlansDetailsTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PlansDetailsTab.Designer.cs">
+      <DependentUpon>PlansDetailsTab.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Schedule.cs">
       <SubType>UserControl</SubType>
@@ -554,6 +578,27 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Estimates.resx">
+      <DependentUpon>Estimates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EstimatesTab.resx">
+      <DependentUpon>EstimatesTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InspectionReport.resx">
+      <DependentUpon>InspectionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PlansDetailsTab.resx">
+      <DependentUpon>PlansDetailsTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SurveyReport.resx">
+      <DependentUpon>SurveyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TechSpecs.resx">
+      <DependentUpon>TechSpecs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="QC_EngDataReport.xsc">
       <DependentUpon>QC_EngDataReport.xsd</DependentUpon>

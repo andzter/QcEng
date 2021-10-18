@@ -68,7 +68,7 @@ namespace QC.Forms.UserControls
 
                 radGrid.Columns[0].IsVisible = false;
 
- 
+                //var x = radGrid.Columns;
 
                 radGrid.EndUpdate(true);
                 //lblCount.Text = @"Record Count : " + rGrid.RowCount;
@@ -93,19 +93,15 @@ namespace QC.Forms.UserControls
             }
         }
 
-        protected virtual DataTable GetData()
+        public DataTable GetData()
         {
             //return null;
             var data = new Repository.ProjectSchedule().Get(_id);
 
             return data;
         }
-
-        protected virtual Workbook CreateWorkbook()
-        {
-            return new Workbook();
-        }
-        protected virtual void RefreshData()
+ 
+        public void RefreshData()
         {
             LoadData();
         }
@@ -123,93 +119,7 @@ namespace QC.Forms.UserControls
                 e.CellElement.TextWrap = true;
             }
         }
-
-        private void ProcessOutput(int i)
-        {
-            var _leftvar = "";
-            var _rightvar = "";
-            var _transform1 = "";
-            var _temp = "";
-            string _derivation = radGrid.Rows[i].Cells[4].Value.ToString();
-            var _expression = _derivation.Split('=');
-            if (_expression.Count() > 1)
-            {
-                _leftvar = _expression[0].ToString();
-                _rightvar = _expression[1].ToString();
-                //MessageBox.Show("Left : " + _leftvar + "   " + "Right : " + _rightvar);
-            }
-            else
-            {
-                _leftvar = "L";
-                _rightvar = _expression[0].ToString();
-            }
-
-            _transform1 = _rightvar.Replace('X', '*');
-            if (_transform1.IndexOf("30%") != -1)
-            {
-                _temp = "0.3";
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("30%", _temp);
-            }
-
-            if (_transform1.IndexOf("NO.of sides") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[11].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("NO.of sides", _temp);
-            }
-            if (_transform1.IndexOf("No.of MH") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[15].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("No.of MH", _temp);
-            }
-            if (_transform1.IndexOf("L") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[5].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("L", _temp);
-            }
-            if (_transform1.IndexOf("W") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[6].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("W", _temp);
-            }
-            if (_transform1.IndexOf("D") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[7].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("D", _temp);
-            }
-            if (_transform1.IndexOf("t") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[8].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("t", _temp);
-            }
-            if (_transform1.IndexOf("N") != -1)
-            {
-                _temp = radGrid.Rows[i].Cells[17].Value.ToString();
-                if (_temp.Trim().Length == 0) _temp = "0";
-                _transform1 = _transform1.Replace("N", _temp);
-            }
-
-            DataTable dt = new DataTable();
-            var v = dt.Compute(_transform1, "");
-
-            switch (_leftvar)
-            {
-                case "A": radGrid.Rows[i].Cells[21].Value = v; break;
-                case "V":
-                    radGrid.Rows[i].Cells[20].Value = v;
-                    break;
-                case "L": radGrid.Rows[i].Cells[19].Value = v; break;
-                case "N": radGrid.Rows[i].Cells[17].Value = v; break;
-            }
-
-            //MessageBox.Show(_transform1);
-        }
+ 
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -306,5 +216,32 @@ namespace QC.Forms.UserControls
             else
                 Util.ShowInfoMessage("Please Select Row to Remove", "Remove");
         }
+
+        public void SaveDetails()
+        {
+
+            if (!isChange)
+                return;
+
+
+            //for (int i = 0; i < radGrid.Rows.Count; i++)
+            //{
+            //    _service.Save(radGrid.Rows[i].Cells["id"].Value.ToString(), _projectId,
+            //        radGrid.Rows[i].Cells["Order"].Value.ToString().ToInt(),
+            //        radGrid.Rows[i].Cells["Manpower"].Value.ToString(),
+            //        radGrid.Rows[i].Cells["No"].Value.ToString().ToInt(),
+            //        QC.Lib.Global.UserId());
+            //}
+
+            //if (_dataDel.Count > 0)
+            //{
+            //    foreach (var delId in _dataDel)
+            //    {
+            //        _service.Delete(delId);
+            //    }
+            //}
+
+        }
+
     }
 }

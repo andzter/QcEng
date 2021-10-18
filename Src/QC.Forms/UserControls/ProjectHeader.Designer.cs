@@ -441,7 +441,7 @@ namespace QC.Forms.UserControls
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.txtLimits);
             this.Name = "ProjectHeader";
-            this.Size = new System.Drawing.Size(1051, 300);
+            this.Size = new System.Drawing.Size(973, 290);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();

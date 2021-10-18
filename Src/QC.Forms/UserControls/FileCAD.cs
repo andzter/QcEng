@@ -20,6 +20,8 @@ namespace QC.Forms.UserControls
         public FileCAD(string id)
         {
             InitializeComponent();
+            string file = @"E:\QC_Engr\CadFile.png";
+            picBox.Image = new Bitmap(file);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
